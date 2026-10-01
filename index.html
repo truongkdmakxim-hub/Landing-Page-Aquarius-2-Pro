@@ -5,6 +5,32 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Aquarius 2 PRO – Máy làm mềm nước Atlas Filtri</title>
 <meta name="description" content="Máy làm mềm nước toàn nhà Atlas Filtri Aquarius 2 PRO – Made in Italy, van điện tử chuẩn NSF, màn hình cảm ứng, tiết kiệm muối & nước. Giá 65.000.000đ.">
+<link rel="canonical" href="https://aquarius2pro.makxim.vn/">
+<meta name="theme-color" content="#003f87">
+<link rel="icon" type="image/png" sizes="32x32" href="assets/favicon-32.png">
+<link rel="icon" type="image/png" sizes="192x192" href="assets/favicon-192.png">
+<link rel="apple-touch-icon" href="assets/apple-touch-icon.png">
+<meta property="og:type" content="product">
+<meta property="og:locale" content="vi_VN">
+<meta property="og:site_name" content="Makxim">
+<meta property="og:url" content="https://aquarius2pro.makxim.vn/">
+<meta property="og:title" content="Aquarius 2 PRO – Máy làm mềm nước toàn nhà Atlas Filtri">
+<meta property="og:description" content="Chấm dứt cặn vôi, bảo vệ cả ngôi nhà. Made in Italy, van điện tử chuẩn NSF. Test nước miễn phí tại nhà – Hotline 1900 599 894.">
+<meta property="og:image" content="https://aquarius2pro.makxim.vn/assets/og-image.jpg">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta name="twitter:card" content="summary_large_image">
+<!--
+  ===== MÃ ĐO LƯỜNG QUẢNG CÁO (bật khi chạy quảng cáo) =====
+  1) Meta Pixel: thay PIXEL_ID rồi bỏ comment khối dưới.
+  <script>!function(f,b,e,v,n,t,s){if(f.fbq)return;n=f.fbq=function(){n.callMethod?n.callMethod.apply(n,arguments):n.queue.push(arguments)};if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';n.queue=[];t=b.createElement(e);t.async=!0;t.src=v;s=b.getElementsByTagName(e)[0];s.parentNode.insertBefore(t,s)}(window,document,'script','https://connect.facebook.net/en_US/fbevents.js');fbq('init','PIXEL_ID');fbq('track','PageView');</script>
+
+  2) Google Analytics 4 + Google Ads: thay G-XXXXXXX / AW-XXXXXXX rồi bỏ comment.
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-XXXXXXX"></script>
+  <script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments)}gtag('js',new Date());gtag('config','G-XXXXXXX');gtag('config','AW-XXXXXXX');</script>
+
+  Sự kiện đăng ký (fbq Lead / gtag generate_lead) đã được gọi sẵn khi gửi form thành công.
+-->
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
@@ -208,6 +234,10 @@ form{position:relative}
 form .btn:disabled{opacity:.7;cursor:wait}
 .form-err{display:none;margin-top:12px;font-size:14px;color:#e11d48;text-align:center}
 .form-err a{font-weight:700;text-decoration:underline}
+.consent{display:flex;gap:10px;align-items:flex-start;font-size:13px;color:var(--muted);margin:2px 0 14px;line-height:1.5;cursor:pointer}
+.consent input{margin-top:3px;width:16px;height:16px;accent-color:var(--blue);flex:none}
+.consent a{color:var(--blue);text-decoration:underline}
+.consent.err{color:#e11d48}
 .ok-msg{display:none;text-align:center;padding:20px 0}
 .ok-msg svg{width:60px;height:60px;color:var(--ok);margin:0 auto 12px}
 
@@ -599,6 +629,7 @@ footer{background:#06162b;color:rgba(255,255,255,.65);padding:56px 0 100px;font-
           <option>Nước máy</option><option>Nước giếng khoan</option><option>Cả hai</option>
         </select>
         <input type="text" name="website" tabindex="-1" autocomplete="off" aria-hidden="true" style="position:absolute;left:-9999px;width:1px;height:1px;opacity:0">
+        <label class="consent"><input type="checkbox" name="consent" required> <span>Tôi đồng ý để Makxim liên hệ tư vấn và xử lý thông tin theo <a href="chinh-sach-bao-mat.html" target="_blank">Chính sách bảo mật</a>.</span></label>
         <button class="btn btn-primary" type="submit" id="submitBtn">Gửi đăng ký →</button>
         <div class="form-err" id="formErr">Chưa gửi được. Vui lòng thử lại hoặc gọi <a href="tel:1900599894">1900 599 894</a>.</div>
       </div>
@@ -637,8 +668,10 @@ footer{background:#06162b;color:rgba(255,255,255,.65);padding:56px 0 100px;font-
         <img src="assets/atlas-logo.webp" alt="Atlas Filtri">
       </div>
       <div>
-        <b style="color:#fff">Makxim</b> – Phân phối sản phẩm Atlas Filtri<br>
-        Hotline: <a href="tel:1900599894">1900 599 894</a> · Email: <a href="mailto:kinhdoanh@makxim.vn">kinhdoanh@makxim.vn</a>
+        <b style="color:#fff">CÔNG TY CỔ PHẦN THƯƠNG MẠI VÀ XUẤT NHẬP KHẨU MAKXIM VIỆT NAM</b><br>
+        Mã số thuế: 0102397065<br>
+        Hotline: <a href="tel:1900599894">1900 599 894</a> · Email: <a href="mailto:kinhdoanh@makxim.vn">kinhdoanh@makxim.vn</a><br>
+        <a href="chinh-sach-bao-mat.html" style="text-decoration:underline">Chính sách bảo mật</a>
       </div>
     </div>
     <small>Atlas Filtri® là thương hiệu đã đăng ký của Atlas Filtri S.r.l. (Ý). Hình ảnh và thông số kỹ thuật theo tài liệu của nhà sản xuất, có thể thay đổi mà không cần báo trước.</small>
@@ -695,6 +728,9 @@ $('leadForm').addEventListener('submit',async e=>{
   f['name'].style.borderColor=name?'':'#e11d48';
   f['phone'].style.borderColor=phoneOk?'':'#e11d48';
   if(!name||!phoneOk){(name?f['phone']:f['name']).focus();return}
+  const consentOk=f['consent'].checked;
+  f['consent'].closest('.consent').classList.toggle('err',!consentOk);
+  if(!consentOk){f['consent'].focus();return}
   $('formErr').style.display='none';
   if(!SHEET_ENDPOINT){console.warn('Chưa cấu hình SHEET_ENDPOINT – dữ liệu chưa được gửi.')}
   else{
