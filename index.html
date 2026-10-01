@@ -4,7 +4,7 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Aquarius 2 PRO – Máy làm mềm nước Atlas Filtri</title>
-<meta name="description" content="Máy làm mềm nước toàn nhà Atlas Filtri Aquarius 2 PRO – Made in Italy, van điện tử chuẩn NSF, màn hình cảm ứng, tiết kiệm muối & nước. Giá 65.000.000đ.">
+<meta name="description" content="Máy làm mềm nước toàn nhà Aquarius 2 PRO – thương hiệu Atlas Filtri (Italia), nhập khẩu nguyên chiếc, van điện tử chuẩn NSF, chi phí vận hành thấp. Giá 65.000.000đ.">
 <link rel="canonical" href="https://aquarius2pro.makxim.vn/">
 <meta name="theme-color" content="#003f87">
 <link rel="icon" type="image/png" sizes="32x32" href="assets/favicon-32.png">
@@ -15,7 +15,7 @@
 <meta property="og:site_name" content="Makxim">
 <meta property="og:url" content="https://aquarius2pro.makxim.vn/">
 <meta property="og:title" content="Aquarius 2 PRO – Máy làm mềm nước toàn nhà Atlas Filtri">
-<meta property="og:description" content="Chấm dứt cặn vôi, bảo vệ cả ngôi nhà. Made in Italy, van điện tử chuẩn NSF. Test nước miễn phí tại nhà – Hotline 1900 599 894.">
+<meta property="og:description" content="Chấm dứt cặn vôi, bảo vệ cả ngôi nhà. Thương hiệu Atlas Filtri – Italia, nhập khẩu nguyên chiếc. Test nước miễn phí tại nhà – Hotline 1900 599 894.">
 <meta property="og:image" content="https://aquarius2pro.makxim.vn/assets/og-image.jpg">
 <meta property="og:image:width" content="1200">
 <meta property="og:image:height" content="630">
@@ -43,6 +43,7 @@
 }
 *{box-sizing:border-box;margin:0;padding:0}
 html{scroll-behavior:smooth}
+[id]{scroll-margin-top:80px}
 body{font-family:"Be Vietnam Pro",system-ui,sans-serif;color:var(--ink);background:var(--bg);line-height:1.6;-webkit-font-smoothing:antialiased;overflow-x:hidden}
 img{max-width:100%;height:auto;display:block}
 a{color:inherit;text-decoration:none}
@@ -91,13 +92,27 @@ header.scrolled .hotline{color:var(--navy)}
 .badges{display:flex;flex-wrap:wrap;gap:12px}
 .badge{display:flex;align-items:center;gap:10px;padding:10px 16px;border-radius:14px;background:rgba(255,255,255,.08);border:1px solid rgba(255,255,255,.16);font-size:14px;font-weight:500}
 .badge svg{width:22px;height:22px;flex:none;color:var(--sky)}
-.hero-visual{position:relative;display:flex;justify-content:center}
-.hero-visual::before{content:"";position:absolute;width:82%;aspect-ratio:1;border-radius:50%;background:radial-gradient(circle,rgba(94,196,232,.45),transparent 65%);top:8%;filter:blur(10px)}
-.hero-visual img{position:relative;width:min(560px,100%);filter:drop-shadow(0 40px 50px rgba(0,0,0,.35));animation:float 6s ease-in-out infinite}
-@keyframes float{50%{transform:translateY(-14px)}}
-.tag{position:absolute;background:#fff;color:var(--navy-2);border-radius:14px;padding:10px 14px;font-size:13px;font-weight:600;box-shadow:var(--shadow);display:flex;gap:8px;align-items:center;z-index:3}
-.tag b{color:var(--blue);font-size:18px}
-.tag-1{top:10%;left:-2%}.tag-2{bottom:20%;right:0}
+.hero h1 em.warn-em{background:linear-gradient(90deg,#ffb36b,#ff7a1a);-webkit-background-clip:text;background-clip:text}
+.harm{list-style:none;display:grid;grid-template-columns:1fr 1fr;gap:10px 18px;margin-top:24px;max-width:600px}
+.harm li{display:flex;gap:10px;align-items:flex-start;font-size:14.5px;color:rgba(255,255,255,.86);line-height:1.45}
+.harm svg{flex:none;width:30px;height:30px;padding:6px;border-radius:9px;background:rgba(255,122,26,.16);color:#ffb36b}
+.harm b{color:#fff}
+.hero-visual{position:relative;display:flex;justify-content:center;padding-bottom:40px}
+.hero-visual::before{content:"";position:absolute;width:90%;aspect-ratio:1;border-radius:50%;background:radial-gradient(circle,rgba(94,196,232,.35),transparent 65%);top:0;filter:blur(10px)}
+.pipe{position:relative;width:min(470px,100%);aspect-ratio:1;margin:0;touch-action:pan-y}
+.pipe svg{width:100%;height:100%;filter:drop-shadow(0 30px 40px rgba(0,0,0,.4))}
+.pipe input{position:absolute;inset:0;width:100%;height:100%;opacity:0;cursor:ew-resize;margin:0}
+.pipe-knob{position:absolute;top:50%;left:var(--pos);transform:translate(-50%,-50%);width:46px;height:46px;border-radius:50%;background:#fff;color:var(--navy);font-weight:800;font-size:16px;display:grid;place-items:center;box-shadow:0 8px 20px rgba(0,0,0,.35);pointer-events:none;letter-spacing:2px}
+.pipe-lbl{position:absolute;top:-6px;font-size:12.5px;font-weight:800;letter-spacing:.08em;padding:7px 12px;border-radius:10px;line-height:1.25;pointer-events:none}
+.pipe-lbl small{display:block;font-size:11px;font-weight:500;letter-spacing:0;opacity:.85}
+.pipe-lbl.l{left:0;background:#f1e8d2;color:#6b4f1d}
+.pipe-lbl.r{right:0;background:#0a8fd0;color:#fff;text-align:right}
+.pipe figcaption{position:absolute;left:50%;bottom:-34px;transform:translateX(-50%);font-size:12.5px;color:rgba(255,255,255,.7);white-space:nowrap}
+.hero-prod{position:absolute;right:-30px;bottom:10px;width:min(230px,42%);filter:drop-shadow(0 25px 30px rgba(0,0,0,.45));animation:float 6s ease-in-out infinite;z-index:2;pointer-events:none}
+@keyframes float{50%{transform:translateY(-12px)}}
+.tag{position:absolute;background:#fff;color:var(--navy-2);border-radius:14px;padding:10px 14px;font-size:13px;font-weight:600;box-shadow:var(--shadow);display:flex;gap:8px;align-items:center;z-index:3;line-height:1.35}
+.tag b{color:var(--accent);font-size:20px}
+.tag-1{bottom:18%;left:-6%;pointer-events:none}
 .price-chip{margin-top:30px;display:inline-flex;align-items:baseline;gap:12px;padding:14px 22px;border-radius:16px;background:rgba(255,255,255,.1);border:1px dashed rgba(255,255,255,.35)}
 .price-chip small{opacity:.75}.price-chip strong{font-size:28px;font-weight:800;color:#fff}
 
@@ -112,6 +127,44 @@ header.scrolled .hotline{color:var(--navy)}
 .culprit{margin-top:40px;padding:26px 30px;border-radius:var(--radius);background:linear-gradient(90deg,var(--navy),var(--blue));color:#fff;display:flex;gap:20px;align-items:center;justify-content:space-between;flex-wrap:wrap}
 .culprit p{font-size:19px;font-weight:600}
 .culprit p span{color:var(--sky)}
+
+/* Worries */
+.worry{background:linear-gradient(180deg,#fff,#fff8f1 60%,#fff)}
+.worry-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:22px;margin-top:48px}
+.wcard{position:relative;background:#fff;border:1px solid #f1e3d3;border-radius:24px;padding:30px 28px;display:flex;flex-direction:column;gap:14px;box-shadow:0 18px 40px -28px rgba(122,74,18,.45)}
+.wnum{font-size:44px;font-weight:800;line-height:1;color:transparent;-webkit-text-stroke:1.5px var(--accent)}
+.wcard h3{font-size:19px;color:var(--navy-2)}
+.wcard p{font-size:15px;color:var(--muted)}
+.wstat{display:flex;align-items:baseline;gap:6px;flex-wrap:wrap;color:var(--navy)!important;font-weight:600}
+.wstat b{font-size:36px;font-weight:800;letter-spacing:-.02em;color:var(--ok)}
+.wstat small{flex-basis:100%;font-size:12.5px;font-weight:400;color:var(--muted)}
+.wfix{margin-top:auto;display:flex;gap:10px;padding:14px 16px;border-radius:14px;background:var(--ice);font-size:14.5px;color:var(--navy-2);line-height:1.5}
+.wfix svg{flex:none;width:22px;height:22px;color:var(--ok)}
+.wfix a{color:var(--blue);font-weight:700}
+.auth{margin-top:56px;border-radius:28px;background:#fff;box-shadow:var(--shadow);border:1px solid var(--line);overflow:hidden}
+.auth-head{padding:26px 32px;background:var(--navy-2);color:#fff}
+.auth-head h3{font-size:clamp(19px,2.2vw,24px)}
+.auth-scroll{overflow-x:auto}
+.auth-table{width:100%;border-collapse:collapse;min-width:640px}
+.auth-table th,.auth-table td{padding:16px 22px;text-align:left;border-bottom:1px solid var(--line);font-size:15px;vertical-align:top}
+.auth-table th{font-size:14px;color:var(--muted);font-weight:600}
+.auth-table th small{font-weight:500;opacity:.8}
+.auth-table th.good{color:var(--ok)}.auth-table th.bad{color:#c2410c}
+.auth-table td:first-child{font-weight:700;color:var(--navy-2);white-space:nowrap}
+.auth-table td.good{background:#f1faf6}
+.auth-table td svg{width:18px;height:18px;vertical-align:-3px;margin-right:8px}
+.auth-table td.good svg{color:var(--ok)}.auth-table td.bad svg{color:#e11d48}
+.auth-table td.bad{color:var(--muted)}
+.mini-form{display:grid;grid-template-columns:1fr 1.3fr;gap:24px;align-items:center;padding:28px 32px;background:#fff6ec;border-radius:0;box-shadow:none}
+.mf-text b{display:block;font-size:18px;color:var(--navy-2);margin-bottom:4px}
+.mf-text span{font-size:14.5px;color:#7a4a12}
+.mf-fields{display:grid;grid-template-columns:1fr 1fr auto;gap:10px;align-items:start}
+.mf-fields .in{margin:0;background:#fff}
+.mf-fields .btn{margin:0;width:auto;padding:15px 22px}
+.mf-fields .consent,.mf-fields .form-err{grid-column:1/-1;margin:0}
+.mini-form .ok-msg{grid-column:1/-1;padding:6px 0;color:var(--navy-2)}
+.mini-form .ok-msg svg{width:36px;height:36px;margin:0 auto 6px}
+.foot-note{margin-top:16px;font-size:12.5px;color:var(--muted);text-align:center}
 
 /* Compare */
 .compare{background:linear-gradient(180deg,#f6fafd,#fff)}
@@ -193,6 +246,10 @@ input[type=range]{width:100%;accent-color:var(--blue);height:6px}
 .res div b{display:block;font-size:36px;font-weight:800;line-height:1.1;color:#fff}
 .res div span{font-size:14px;opacity:.75}
 .res-note{margin-top:26px;font-size:13px;opacity:.65}
+.res-cost{margin-top:26px;padding:18px 20px;border-radius:16px;background:rgba(20,160,106,.18);border:1px solid rgba(94,232,170,.35)}
+.res-cost span{display:block;font-size:13.5px;opacity:.8}
+.res-cost>b{font-size:34px;font-weight:800;color:#7ef0bd;line-height:1.15}
+.res-cost small{font-size:14px;opacity:.85}
 .res-warn{display:none;margin-top:18px;padding:12px 14px;border-radius:12px;background:rgba(255,122,26,.18);font-size:14px}
 
 /* Pricing */
@@ -271,18 +328,23 @@ footer{background:#06162b;color:rgba(255,255,255,.65);padding:56px 0 100px;font-
   .nav-links{display:none}
   .hero{padding-top:110px;min-height:auto}
   .hero-grid,.how-grid,.spec-wrap,.contact-grid,.cmp,.calc,.price-box,.gallery{grid-template-columns:1fr}
-  .hero-visual{order:-1}.hero-visual img{width:min(420px,90%)}
+  .hero-visual{margin-top:20px}.pipe{width:min(420px,92%)}
   .pain-grid{grid-template-columns:1fr 1fr}
+  .worry-grid,.mini-form{grid-template-columns:1fr}
   .feat-grid{grid-template-columns:1fr 1fr}
-  .tag-1{left:0}
+  .tag-1{left:0;bottom:12%}.hero-prod{right:0;width:min(180px,36%)}
 }
 @media (max-width:620px){
   .pain-grid,.feat-grid{grid-template-columns:1fr}
+  .mf-fields{grid-template-columns:1fr}.mf-fields .btn{width:100%}
+  .auth-head,.mini-form{padding:22px}
   .nav .btn{display:none}
   .m-cta{display:flex}
   .calc-in,.calc-out,.pb-body,form,.cmp-card{padding:26px}
   .gal{min-height:300px}
   .tag{font-size:11.5px;padding:8px 10px}.tag b{font-size:15px}
+  .harm{grid-template-columns:1fr}.pipe-lbl{font-size:11px;padding:6px 9px}
+  .badges{gap:8px}.badge{font-size:12.5px;padding:7px 10px;gap:7px}.badge svg{width:18px;height:18px}
   .spec-table td{padding:13px 14px;font-size:14.5px}
   .culprit{padding:22px}
 }
@@ -320,7 +382,7 @@ footer{background:#06162b;color:rgba(255,255,255,.65);padding:56px 0 100px;font-
   <div class="wrap nav">
     <a href="#top"><img class="logo" src="assets/atlas-logo.webp" alt="Atlas Filtri"></a>
     <nav class="nav-links">
-      <a href="#van-de">Vấn đề</a><a href="#cong-nghe">Công nghệ</a><a href="#tinh-nang">Tính năng</a><a href="#thong-so">Thông số</a><a href="#bang-gia">Bảng giá</a><a href="#faq">Hỏi đáp</a>
+      <a href="#van-de">Vấn đề</a><a href="#lo-ngai">Nỗi lo</a><a href="#cong-nghe">Công nghệ</a><a href="#tinh-nang">Tính năng</a><a href="#thong-so">Thông số</a><a href="#bang-gia">Bảng giá</a><a href="#faq">Hỏi đáp</a>
     </nav>
     <div class="nav-right">
       <a href="tel:1900599894" class="hotline"><svg><use href="#i-phone"/></svg>1900 599 894</a>
@@ -334,24 +396,56 @@ footer{background:#06162b;color:rgba(255,255,255,.65);padding:56px 0 100px;font-
   <div class="bubbles" aria-hidden="true"></div>
   <div class="wrap hero-grid">
     <div>
-      <span class="eyebrow">Máy làm mềm nước toàn nhà · Made in Italy</span>
-      <h1>Chấm dứt cặn vôi.<br><em>Bảo vệ cả ngôi nhà.</em></h1>
-      <p class="lead">Atlas Filtri <b>Aquarius 2 PRO</b> loại bỏ canxi &amp; magie gây cặn ngay từ đầu nguồn – giúp vòi sen, bình nóng lạnh, máy giặt bền hơn, da và tóc mềm mại hơn mỗi ngày.</p>
+      <span class="eyebrow">Cảnh báo nước cứng · Atlas Filtri – Italia</span>
+      <h1>Cặn vôi đang âm thầm <em class="warn-em">phá hỏng</em> ngôi nhà bạn.</h1>
+      <p class="lead"><b>Aquarius 2 PRO</b> chặn canxi &amp; magie ngay từ đầu nguồn – trước khi chúng kịp bám vào đường ống, bình nóng lạnh, máy giặt, vòi sen và làn da của cả gia đình.</p>
+      <ul class="harm">
+        <li><svg><use href="#i-heater"/></svg><span><b>Bình nóng lạnh</b> đóng cặn – tốn điện, hỏng sớm</span></li>
+        <li><svg><use href="#i-drop"/></svg><span><b>Đường ống</b> hẹp dần – nước yếu, rò rỉ</span></li>
+        <li><svg><use href="#i-shower"/></svg><span><b>Vòi sen, kính, sứ</b> ố trắng, tắc nghẽn</span></li>
+        <li><svg><use href="#i-hair"/></svg><span><b>Da khô, tóc xơ</b>, quần áo thô cứng</span></li>
+      </ul>
       <div class="hero-cta">
-        <a href="#dang-ky" class="btn btn-primary">Đăng ký kiểm tra nước miễn phí →</a>
-        <a href="#bang-gia" class="btn btn-ghost">Xem giá &amp; ưu đãi</a>
+        <a href="#dang-ky" class="btn btn-primary">Đăng ký test nước miễn phí →</a>
+        <a href="#bang-gia" class="btn btn-ghost">Xem giá: 65.000.000đ</a>
       </div>
       <div class="badges">
-        <div class="badge"><svg><use href="#i-flag"/></svg>Sản xuất tại Ý</div>
+        <div class="badge"><svg><use href="#i-flag"/></svg>Thương hiệu Atlas Filtri – Italia</div>
+        <div class="badge"><svg><use href="#i-box"/></svg>Nhập khẩu nguyên chiếc</div>
         <div class="badge"><svg><use href="#i-shield"/></svg>Van điện tử chuẩn NSF</div>
-        <div class="badge"><svg><use href="#i-leaf"/></svg>Tiết kiệm ~8.000 L nước/năm</div>
       </div>
-      <div class="price-chip"><small>Giá bán</small><strong>65.000.000đ</strong></div>
     </div>
     <div class="hero-visual">
-      <div class="tag tag-1"><b>25 L</b> hạt nhựa trao đổi ion</div>
-      <img src="assets/aquarius-duo.webp" alt="Máy làm mềm nước Atlas Filtri Aquarius" width="1400" height="1265">
-      <div class="tag tag-2"><b>2,4 m³/h</b> lưu lượng tối đa</div>
+      <figure class="pipe" id="pipe" style="--pos:50%">
+        <svg viewBox="0 0 400 400" role="img" aria-label="Mặt cắt đường ống: bên trái bị cặn vôi bám dày, bên phải sạch nhờ nước mềm">
+          <defs>
+            <radialGradient id="pMetal" cx="50%" cy="45%" r="55%"><stop offset=".86" stop-color="#9fb0c2"/><stop offset=".93" stop-color="#e9eff5"/><stop offset="1" stop-color="#6c7f93"/></radialGradient>
+            <radialGradient id="pClean" cx="45%" cy="40%" r="65%"><stop offset="0" stop-color="#8fdcf7"/><stop offset=".6" stop-color="#2ba6e0"/><stop offset="1" stop-color="#0a6fb8"/></radialGradient>
+            <radialGradient id="pMurky" cx="45%" cy="40%" r="60%"><stop offset="0" stop-color="#b9c7c2"/><stop offset="1" stop-color="#6f8580"/></radialGradient>
+            <clipPath id="pClip"><rect id="pClipRect" x="0" y="0" width="200" height="400"/></clipPath>
+          </defs>
+          <circle cx="200" cy="200" r="190" fill="url(#pMetal)"/>
+          <!-- sạch -->
+          <circle cx="200" cy="200" r="160" fill="url(#pClean)"/>
+          <g fill="#fff" opacity=".55"><circle cx="250" cy="140" r="9"/><circle cx="290" cy="210" r="5"/><circle cx="230" cy="270" r="7"/><circle cx="310" cy="160" r="4"/><circle cx="270" cy="300" r="4"/></g>
+          <!-- đóng cặn -->
+          <g clip-path="url(#pClip)">
+            <circle cx="200" cy="200" r="160" fill="#cdb98f"/>
+            <path d="M337.4 187.9Q338.1 200.0 340.1 212.5Q342.2 225.1 340.9 237.9Q339.6 250.8 333.8 262.4Q328.1 274.0 318.6 282.8Q309.2 291.6 297.7 297.2Q286.3 302.8 276.2 308.7Q266.2 314.6 256.3 321.1Q246.5 327.7 234.8 329.6Q223.2 331.6 211.6 334.7Q200.0 337.7 187.9 337.5Q175.8 337.2 163.0 336.9Q150.3 336.6 138.8 331.3Q127.3 326.0 118.8 316.4Q110.4 306.8 100.5 299.3Q90.7 291.7 82.5 282.1Q74.3 272.6 70.5 260.5Q66.8 248.5 65.2 236.3Q63.7 224.0 63.4 212.0Q63.1 200.0 63.9 188.1Q64.7 176.1 69.2 165.1Q73.6 154.0 79.2 143.7Q84.7 133.4 90.6 123.3Q96.4 113.1 103.7 103.5Q110.9 93.8 118.9 83.6Q126.9 73.4 137.9 66.6Q149.0 59.9 161.9 58.5Q174.8 57.2 187.4 59.5Q200.0 61.7 211.9 63.6Q223.7 65.6 235.2 68.5Q246.8 71.4 257.7 76.3Q268.6 81.2 277.6 88.9Q286.7 96.7 294.8 105.2Q302.9 113.6 312.4 121.6Q321.9 129.6 326.7 140.9Q331.4 152.2 334.1 164.0Q336.8 175.9 337.4 187.9Z" fill="#e2d4b2"/>
+            <path d="M306.7 190.9Q309.8 200.0 315.9 210.8Q322.1 221.5 320.1 232.2Q318.1 243.0 312.4 252.3Q306.8 261.7 299.1 269.2Q291.5 276.8 284.3 284.3Q277.1 291.9 267.4 295.9Q257.7 299.9 247.7 301.6Q237.6 303.4 228.1 304.3Q218.6 305.2 209.3 309.0Q200.0 312.7 190.1 312.4Q180.2 312.1 170.9 308.7Q161.6 305.4 153.1 300.8Q144.5 296.1 135.4 292.0Q126.3 287.9 117.2 282.5Q108.1 277.1 100.4 269.5Q92.7 262.0 89.0 251.9Q85.3 241.7 84.4 231.1Q83.5 220.5 83.8 210.3Q84.0 200.0 86.1 190.1Q88.1 180.3 94.8 172.2Q101.6 164.2 106.9 156.7Q112.1 149.2 113.9 139.2Q115.7 129.2 120.6 120.2Q125.5 111.3 132.9 103.9Q140.3 96.6 150.5 94.2Q160.6 91.9 170.5 90.5Q180.4 89.1 190.2 85.8Q200.0 82.5 210.3 82.9Q220.6 83.4 230.7 85.6Q240.8 87.8 250.5 91.7Q260.2 95.7 268.0 102.7Q275.7 109.8 281.1 118.6Q286.6 127.4 291.8 135.7Q297.0 144.0 297.7 154.1Q298.5 164.2 301.1 172.9Q303.7 181.7 306.7 190.9Z" fill="#f1e8d2"/>
+            <g fill="#a8916a" opacity=".7"><circle cx="75" cy="239" r="3"/><circle cx="66" cy="184" r="2.2"/><circle cx="81" cy="286" r="2"/><circle cx="102" cy="96" r="1.7"/><circle cx="134" cy="93" r="1.8"/><circle cx="145" cy="302" r="1.3"/><circle cx="103" cy="129" r="2.1"/><circle cx="104" cy="153" r="1.9"/><circle cx="152" cy="77" r="1.5"/><circle cx="117" cy="105" r="2.7"/><circle cx="135" cy="341" r="1.4"/><circle cx="65" cy="160" r="3"/><circle cx="188" cy="62" r="2.8"/><circle cx="114" cy="115" r="2.4"/><circle cx="93" cy="291" r="2.4"/><circle cx="64" cy="254" r="1.4"/><circle cx="88" cy="214" r="2.6"/><circle cx="66" cy="203" r="3"/><circle cx="172" cy="348" r="1.6"/><circle cx="169" cy="87" r="1.7"/><circle cx="175" cy="301" r="2.7"/><circle cx="63" cy="147" r="2.4"/><circle cx="153" cy="54" r="1.2"/><circle cx="124" cy="90" r="1.5"/></g>
+            <path d="M296.7 191.6Q297.8 200.0 293.3 207.8Q288.7 215.6 282.8 221.8Q276.8 228.0 274.9 235.1Q273.0 242.1 272.2 251.0Q271.4 259.9 262.9 262.4Q254.4 264.8 246.7 266.3Q239.1 267.7 233.7 272.8Q228.3 277.8 221.3 279.2Q214.2 280.6 207.1 284.2Q200.0 287.8 192.4 287.0Q184.8 286.2 176.2 287.7Q167.6 289.1 159.1 287.2Q150.7 285.4 142.1 282.3Q133.5 279.2 129.9 270.5Q126.3 261.8 127.5 251.5Q128.7 241.1 126.7 234.3Q124.6 227.4 121.6 220.9Q118.6 214.3 119.2 207.2Q119.8 200.0 117.8 192.6Q115.8 185.2 117.7 177.9Q119.6 170.7 121.8 163.4Q124.0 156.1 128.3 149.8Q132.5 143.4 136.3 136.0Q140.1 128.7 147.7 125.6Q155.3 122.6 161.2 116.2Q167.2 109.8 174.7 104.6Q182.3 99.5 191.1 101.1Q200.0 102.7 207.7 108.0Q215.3 113.2 220.6 121.1Q225.8 129.0 232.5 130.5Q239.3 132.0 245.2 135.5Q251.2 139.0 258.9 141.5Q266.6 144.1 272.6 149.3Q278.6 154.6 282.3 161.6Q286.0 168.7 290.8 175.9Q295.5 183.2 296.7 191.6Z" fill="url(#pMurky)"/>
+          </g>
+          <line id="pLine" x1="200" y1="6" x2="200" y2="394" stroke="#fff" stroke-width="3"/>
+        </svg>
+        <span class="pipe-lbl l">NƯỚC CỨNG<small>sau vài năm sử dụng</small></span>
+        <span class="pipe-lbl r">NƯỚC MỀM<small>với Aquarius 2 PRO</small></span>
+        <span class="pipe-knob" aria-hidden="true">‹ ›</span>
+        <input type="range" min="0" max="100" value="50" id="pipeRange" aria-label="Kéo để so sánh ống nước cứng và nước mềm">
+        <figcaption>Mặt cắt đường ống – kéo để so sánh</figcaption>
+      </figure>
+      <div class="tag tag-1"><b>⚠</b> Lòng ống hẹp dần,<br>áp lực nước yếu</div>
+      <img class="hero-prod" src="assets/aquarius-duo.webp" alt="Máy làm mềm nước Atlas Filtri Aquarius 2 PRO" width="1400" height="1265">
     </div>
   </div>
 </section>
@@ -374,6 +468,69 @@ footer{background:#06162b;color:rgba(255,255,255,.65);padding:56px 0 100px;font-
       <p>Thủ phạm: <span>ion Canxi (Ca²⁺) &amp; Magie (Mg²⁺)</span> trong nước cứng.</p>
       <a href="#cong-nghe" class="btn btn-ghost">Xem giải pháp ↓</a>
     </div>
+  </div>
+</section>
+
+<!-- WORRIES -->
+<section class="worry" id="lo-ngai">
+  <div class="wrap">
+    <div class="center reveal">
+      <span class="eyebrow">Trước khi xuống tiền</span>
+      <h2>3 nỗi lo lớn nhất khi mua máy làm mềm nước</h2>
+      <p class="lead">Đây là khoản đầu tư hàng chục triệu, dùng nhiều năm. Và đây cũng là 3 câu hỏi khách hàng đặt ra cho Makxim nhiều nhất.</p>
+    </div>
+    <div class="worry-grid">
+      <article class="wcard reveal">
+        <span class="wnum">01</span>
+        <h3>“Trả tiền hàng cao cấp – nhận về hàng kém chất lượng”</h3>
+        <p>Thị trường tràn lan máy gắn mác châu Âu với giá “mềm” bất ngờ. Dùng vài tháng van báo lỗi, nước vẫn cứng, bảo hành không biết tìm ai.</p>
+        <div class="wfix"><svg><use href="#i-shield"/></svg><span><b>Với Makxim:</b> phân phối chính hãng Atlas Filtri, test nước trước khi mua, hợp đồng &amp; bảo hành rõ ràng.</span></div>
+      </article>
+      <article class="wcard reveal">
+        <span class="wnum">02</span>
+        <h3>“Không phân biệt được máy nguyên chiếc và máy mua vỏ về đổ vật liệu”</h3>
+        <p>Nhiều nơi nhập cột composite, van rời rồi tự đổ hạt nhựa không rõ nguồn gốc, dán nhãn thương hiệu. Bên ngoài nhìn gần như giống hệt.</p>
+        <div class="wfix"><svg><use href="#i-box"/></svg><span><b>Aquarius 2 PRO</b> nhập khẩu nguyên chiếc, đồng bộ từ van, hạt nhựa đến tủ. <a href="#phan-biet">Xem cách phân biệt ↓</a></span></div>
+      </article>
+      <article class="wcard reveal">
+        <span class="wnum">03</span>
+        <h3>“Sợ chi phí vận hành hằng tháng đắt đỏ”</h3>
+        <p class="wstat"><b>~3.300đ</b>/ngày<small>gia đình 4 người, nước 30°f *</small></p>
+        <p>Van tỷ lệ chỉ hoàn nguyên khi thực sự cần, chỉ 120 g muối/lít hạt nhựa – thuộc nhóm thấp nhất thị trường. Điện năng không đáng kể.</p>
+        <div class="wfix"><svg><use href="#i-leaf"/></svg><span><a href="#chi-phi">Tự tính chi phí cho nhà bạn ↓</a></span></div>
+      </article>
+    </div>
+
+    <div class="auth reveal" id="phan-biet">
+      <div class="auth-head">
+        <h3>Nguyên chiếc hay “vỏ + đổ vật liệu”? Nhìn vào 5 điểm này</h3>
+      </div>
+      <div class="auth-scroll">
+        <table class="auth-table">
+          <thead><tr><th>Tiêu chí</th><th class="good">Nhập khẩu nguyên chiếc<br><small>Aquarius 2 PRO</small></th><th class="bad">Mua vỏ về đổ vật liệu</th></tr></thead>
+          <tbody>
+            <tr><td>Van điều khiển</td><td class="good"><svg><use href="#i-check"/></svg>Van điện tử đồng bộ, chuẩn NSF, cài đặt đúng model</td><td class="bad"><svg><use href="#i-x"/></svg>Van rời giá rẻ, ghép tạm, dễ báo lỗi</td></tr>
+            <tr><td>Hạt nhựa</td><td class="good"><svg><use href="#i-check"/></svg>Đúng chủng loại, đúng định lượng 25 L theo thiết kế</td><td class="bad"><svg><use href="#i-x"/></svg>Không rõ nguồn gốc, dễ đổ thiếu, nhanh mất tác dụng</td></tr>
+            <tr><td>Kết cấu</td><td class="good"><svg><use href="#i-check"/></svg>Tủ liền khối – bồn muối, phao, khớp tràn đồng bộ</td><td class="bad"><svg><use href="#i-x"/></svg>Cột + thùng muối rời, nhiều điểm nối dễ rò rỉ</td></tr>
+            <tr><td>Thông số</td><td class="good"><svg><use href="#i-check"/></svg>Công bố rõ ràng, có tài liệu kỹ thuật của hãng</td><td class="bad"><svg><use href="#i-x"/></svg>Thông số “ước chừng”, không kiểm chứng được</td></tr>
+            <tr><td>Bảo hành</td><td class="good"><svg><use href="#i-check"/></svg>Theo tiêu chuẩn thương hiệu, linh kiện chính hãng</td><td class="bad"><svg><use href="#i-x"/></svg>Phụ thuộc đơn vị tự lắp ráp</td></tr>
+          </tbody>
+        </table>
+      </div>
+      <form class="mini-form lead-form" novalidate data-product="Aquarius 2 PRO – Tư vấn phân biệt hàng chính hãng">
+        <div class="mf-text"><b>Đang phân vân giữa nhiều báo giá?</b><span>Để lại số điện thoại – chuyên viên Makxim hướng dẫn bạn cách kiểm tra máy và test nước miễn phí.</span></div>
+        <div class="mf-fields">
+          <input class="in" name="name" placeholder="Họ và tên *" required autocomplete="name">
+          <input class="in" name="phone" type="tel" placeholder="Số điện thoại *" required autocomplete="tel">
+          <button class="btn btn-primary" type="submit">Nhận tư vấn →</button>
+          <input type="text" name="website" tabindex="-1" autocomplete="off" aria-hidden="true" style="position:absolute;left:-9999px;width:1px;height:1px;opacity:0">
+          <label class="consent"><input type="checkbox" name="consent" required> <span>Tôi đồng ý để Makxim liên hệ theo <a href="chinh-sach-bao-mat.html" target="_blank">Chính sách bảo mật</a>.</span></label>
+          <div class="form-err">Chưa gửi được. Vui lòng gọi <a href="tel:1900599894">1900 599 894</a>.</div>
+        </div>
+        <div class="ok-msg"><svg><use href="#i-check"/></svg><b>Cảm ơn bạn!</b> Makxim sẽ liên hệ sớm.</div>
+      </form>
+    </div>
+    <p class="foot-note reveal">* Ước tính gồm muối (~10.000đ/kg), nước hoàn nguyên và điện năng; chi phí thực tế phụ thuộc độ cứng nước và lượng sử dụng.</p>
   </div>
 </section>
 
@@ -470,7 +627,7 @@ footer{background:#06162b;color:rgba(255,255,255,.65);padding:56px 0 100px;font-
     <div class="center reveal">
       <span class="eyebrow" style="color:var(--sky)">Vì sao chọn Aquarius 2 PRO</span>
       <h2>Thiết kế độc quyền. Hiệu năng vượt trội.</h2>
-      <p class="lead">Mọi chi tiết được kỹ sư Ý tinh chỉnh để vận hành bền bỉ, tiết kiệm và đẹp trong mọi không gian.</p>
+      <p class="lead">Thiết kế và tiêu chuẩn kỹ thuật từ Atlas Filtri – Italia, tối ưu để vận hành bền bỉ, tiết kiệm và đẹp trong mọi không gian.</p>
     </div>
     <div class="feat-grid">
       <div class="feat reveal"><div class="ic"><svg><use href="#i-touch"/></svg></div><h3>Màn hình cảm ứng màu</h3><p>LCD cảm ứng phủ kính cường lực, giao diện trực quan, cài đặt chỉ trong vài thao tác.</p></div>
@@ -512,7 +669,7 @@ footer{background:#06162b;color:rgba(255,255,255,.65);padding:56px 0 100px;font-
     <div class="reveal">
       <span class="eyebrow">Thông số kỹ thuật</span>
       <h2>Thông số chính hãng</h2>
-      <p class="lead">Số liệu theo tài liệu kỹ thuật của nhà sản xuất Atlas Filtri (Ý).</p>
+      <p class="lead">Số liệu theo tài liệu kỹ thuật chính thức của Atlas Filtri.</p>
       <div class="warn"><svg><use href="#i-alert"/></svg><div><b>Lưu ý lắp đặt:</b> Nhiệt độ nước tối đa 38°C – máy được lắp tại <b>đường nước lạnh đầu nguồn</b>, trước bình nóng lạnh. Nước làm mềm không thay thế nước uống đã qua lọc RO.</div></div>
     </div>
     <table class="spec-table reveal">
@@ -530,18 +687,19 @@ footer{background:#06162b;color:rgba(255,255,255,.65);padding:56px 0 100px;font-
       <tr><td>Sức chứa muối</td><td>64 kg</td></tr>
       <tr><td>Kết nối vào / ra</td><td>3/4"</td></tr>
       <tr><td>Van điều khiển</td><td>Điện tử, chứng nhận NSF</td></tr>
-      <tr><td>Xuất xứ</td><td>Ý (Made in Italy)</td></tr>
+      <tr><td>Thương hiệu</td><td>Atlas Filtri – Italia</td></tr>
+      <tr><td>Hình thức</td><td>Nhập khẩu nguyên chiếc</td></tr>
     </table>
   </div>
 </section>
 
 <!-- CALCULATOR -->
-<section>
+<section id="chi-phi">
   <div class="wrap">
     <div class="center reveal">
       <span class="eyebrow">Công cụ ước tính</span>
       <h2>Chi phí vận hành của gia đình bạn</h2>
-      <p class="lead">Kéo thanh trượt để ước tính tần suất hoàn nguyên và lượng muối cần dùng mỗi tháng.</p>
+      <p class="lead">Kéo thanh trượt để ước tính lượng muối và chi phí vận hành mỗi tháng – thấp hơn bạn nghĩ rất nhiều.</p>
     </div>
     <div class="calc reveal">
       <div class="calc-in">
@@ -566,8 +724,9 @@ footer{background:#06162b;color:rgba(255,255,255,.65);padding:56px 0 100px;font-
           <div><b id="rBag">3</b><span>tháng / bao muối 25 kg</span></div>
           <div><b id="rWater">18</b><span>m³ nước mềm / tháng</span></div>
         </div>
+        <div class="res-cost"><span>Chi phí vận hành ước tính</span><b id="rCost">98.000đ</b><small>/ tháng · khoảng <b id="rDay">3.300đ</b>/ngày</small></div>
         <div class="res-warn" id="rWarn">Độ cứng vượt 50°f – cần khảo sát để thiết kế hệ thống tiền xử lý phù hợp.</div>
-        <p class="res-note">* Kết quả mang tính tham khảo, dựa trên công suất chu kỳ 150 m³×°f và 2,4 kg muối/lần. Van tỷ lệ có thể giúp lượng muối thực tế thấp hơn.</p>
+        <p class="res-note">* Kết quả mang tính tham khảo, dựa trên công suất chu kỳ 150 m³×°f, 2,4 kg muối &amp; 132 L nước/lần hoàn nguyên; giả định muối 10.000đ/kg, nước 12.000đ/m³, điện ~6.000đ/tháng. Van tỷ lệ có thể giúp chi phí thực tế thấp hơn.</p>
       </div>
     </div>
   </div>
@@ -588,7 +747,7 @@ footer{background:#06162b;color:rgba(255,255,255,.65);padding:56px 0 100px;font-
         <div class="price">65.000.000<small> đ</small></div>
         <div class="vat">Giá niêm yết</div>
         <ul class="incl">
-          <li><svg><use href="#i-check"/></svg>Hàng chính hãng nhập khẩu từ Ý</li>
+          <li><svg><use href="#i-check"/></svg>Chính hãng Atlas Filtri – nhập khẩu nguyên chiếc, không lắp ráp</li>
           <li><svg><use href="#i-check"/></svg>Khảo sát &amp; test độ cứng nước miễn phí</li>
           <li><svg><use href="#i-check"/></svg>Tư vấn giải pháp lọc tổng thể (làm mềm + RO)</li>
           <li><svg><use href="#i-check"/></svg>Lắp đặt &amp; hướng dẫn vận hành tận nơi</li>
@@ -610,6 +769,7 @@ footer{background:#06162b;color:rgba(255,255,255,.65);padding:56px 0 100px;font-
       <ul class="perks">
         <li><span><svg><use href="#i-flask"/></svg></span>Đo độ cứng nước thực tế</li>
         <li><span><svg><use href="#i-tool"/></svg></span>Khảo sát vị trí lắp đặt đầu nguồn</li>
+        <li><span><svg><use href="#i-box"/></svg></span>Hướng dẫn phân biệt máy nguyên chiếc &amp; hàng lắp ráp</li>
         <li><span><svg><use href="#i-gear"/></svg></span>Báo giá trọn gói, minh bạch</li>
       </ul>
       <a class="zalo-box" href="https://zalo.me/2665840743788271573" target="_blank" rel="noopener">
@@ -617,7 +777,7 @@ footer{background:#06162b;color:rgba(255,255,255,.65);padding:56px 0 100px;font-
         <div><b>Chat Zalo với Makxim</b><span>Quét mã QR hoặc bấm để mở Zalo OA</span><span>Hotline: 1900 599 894</span></div>
       </a>
     </div>
-    <form id="leadForm" class="reveal" novalidate>
+    <form id="leadForm" class="reveal lead-form" novalidate data-product="Aquarius 2 PRO">
       <div id="formBody">
         <h3>Đăng ký nhận tư vấn</h3>
         <p>Miễn phí – không ràng buộc.</p>
@@ -630,10 +790,10 @@ footer{background:#06162b;color:rgba(255,255,255,.65);padding:56px 0 100px;font-
         </select>
         <input type="text" name="website" tabindex="-1" autocomplete="off" aria-hidden="true" style="position:absolute;left:-9999px;width:1px;height:1px;opacity:0">
         <label class="consent"><input type="checkbox" name="consent" required> <span>Tôi đồng ý để Makxim liên hệ tư vấn và xử lý thông tin theo <a href="chinh-sach-bao-mat.html" target="_blank">Chính sách bảo mật</a>.</span></label>
-        <button class="btn btn-primary" type="submit" id="submitBtn">Gửi đăng ký →</button>
-        <div class="form-err" id="formErr">Chưa gửi được. Vui lòng thử lại hoặc gọi <a href="tel:1900599894">1900 599 894</a>.</div>
+        <button class="btn btn-primary" type="submit">Gửi đăng ký →</button>
+        <div class="form-err">Chưa gửi được. Vui lòng thử lại hoặc gọi <a href="tel:1900599894">1900 599 894</a>.</div>
       </div>
-      <div class="ok-msg" id="okMsg">
+      <div class="ok-msg">
         <svg><use href="#i-check"/></svg>
         <h3>Cảm ơn bạn!</h3>
         <p>Makxim đã nhận thông tin và sẽ liên hệ sớm.</p>
@@ -702,6 +862,7 @@ document.querySelectorAll('.reveal').forEach((el,i)=>{el.style.transitionDelay=(
 
 // Calculator
 const $=id=>document.getElementById(id);
+const SALT_PRICE=10000, WATER_PRICE=12000, ELEC_MONTH=6000; // đ/kg, đ/m³, đ/tháng
 function calc(){
   const p=+$('ppl').value,h=+$('hard').value,u=+$('use').value;
   $('pplO').textContent=p+' người';$('hardO').textContent=h+'°f';$('useO').textContent=u+' L';
@@ -714,6 +875,9 @@ function calc(){
   $('rSalt').textContent=salt.toFixed(1).replace('.',',');
   $('rBag').textContent=(25/salt).toFixed(1).replace('.',',');
   $('rWater').textContent=Math.round(daily*30);
+  const cost=salt*SALT_PRICE+regenMonth*0.132*WATER_PRICE+ELEC_MONTH;
+  const vnd=n=>(Math.round(n/100)*100).toLocaleString('vi-VN')+'đ';
+  $('rCost').textContent=vnd(cost);$('rDay').textContent=vnd(cost/30);
   $('rWarn').style.display=h>50?'block':'none';
 }
 ['ppl','hard','use'].forEach(id=>$(id).addEventListener('input',calc));calc();
@@ -721,10 +885,11 @@ function calc(){
 // Lead form → Google Sheet (Apps Script Web App)
 // Dán URL Web App sau khi triển khai Apps Script (xem google-apps-script/HUONG-DAN.md)
 const SHEET_ENDPOINT='https://script.google.com/macros/s/AKfycbxP_DRDH7wF2VJjaUjn1qJ66JwLagva16443laXolyODZCfBv116wndV6ysqtuzyahd/exec';
-$('leadForm').addEventListener('submit',async e=>{
+document.querySelectorAll('.lead-form').forEach(form=>form.addEventListener('submit',async e=>{
   e.preventDefault();
-  const f=e.target.elements, btn=$('submitBtn');
-  const name=f['name'].value.trim(), phone=f['phone'].value.replace(/\s/g,'');
+  const f=form.elements, btn=form.querySelector('button[type=submit]'), err=form.querySelector('.form-err'), btnText=btn.textContent;
+  const val=k=>f[k]?f[k].value.trim():'';
+  const name=val('name'), phone=val('phone').replace(/\s/g,'');
   const phoneOk=/^0\d{9,10}$/.test(phone);
   f['name'].style.borderColor=name?'':'#e11d48';
   f['phone'].style.borderColor=phoneOk?'':'#e11d48';
@@ -732,27 +897,37 @@ $('leadForm').addEventListener('submit',async e=>{
   const consentOk=f['consent'].checked;
   f['consent'].closest('.consent').classList.toggle('err',!consentOk);
   if(!consentOk){f['consent'].focus();return}
-  $('formErr').style.display='none';
+  err.style.display='none';
   if(!SHEET_ENDPOINT){console.warn('Chưa cấu hình SHEET_ENDPOINT – dữ liệu chưa được gửi.')}
   else{
     const qs=new URLSearchParams(location.search);
     const data=new URLSearchParams({
-      name,phone,area:f['area'].value.trim(),source:f['source'].value,website:f['website'].value,
-      product:'Aquarius 2 PRO',page:location.href,
+      name,phone,area:val('area'),source:val('source'),website:val('website'),
+      product:form.dataset.product,page:location.href,
       utm_source:qs.get('utm_source')||'',utm_campaign:qs.get('utm_campaign')||''
     });
     btn.disabled=true;btn.textContent='Đang gửi...';
     try{
       // no-cors: Apps Script không trả header CORS, request vẫn được ghi vào Sheet
       await fetch(SHEET_ENDPOINT,{method:'POST',mode:'no-cors',body:data});
-    }catch(err){
-      btn.disabled=false;btn.textContent='Gửi đăng ký →';$('formErr').style.display='block';return;
+    }catch(_){
+      btn.disabled=false;btn.textContent=btnText;err.style.display='block';return;
     }
   }
-  $('formBody').style.display='none';$('okMsg').style.display='block';
-  if(window.gtag)gtag('event','generate_lead',{item_name:'Aquarius 2 PRO'});
+  [...form.children].forEach(c=>c.style.display=c.classList.contains('ok-msg')?'block':'none');
+  if(window.gtag)gtag('event','generate_lead',{item_name:form.dataset.product});
   if(window.fbq)fbq('track','Lead');
-});
+}));
+
+// Pipe compare slider
+const pipe=$('pipe'),pr=$('pipeRange'),clip=$('pClipRect'),pl=$('pLine');
+const setPipe=v=>{pipe.style.setProperty('--pos',v+'%');clip.setAttribute('width',v*4);pl.setAttribute('x1',v*4);pl.setAttribute('x2',v*4)};
+pr.addEventListener('input',()=>setPipe(+pr.value));
+if(!matchMedia('(prefers-reduced-motion:reduce)').matches){
+  let t0=null,touched=false;pr.addEventListener('pointerdown',()=>touched=true,{once:true});
+  const intro=t=>{if(touched)return;t0??=t;const k=Math.min((t-t0)/2600,1);const v=50+28*Math.sin(k*Math.PI*2)*(1-k);pr.value=v;setPipe(v);if(k<1)requestAnimationFrame(intro)};
+  setTimeout(()=>requestAnimationFrame(intro),900);
+}
 </script>
 </body>
 </html>
