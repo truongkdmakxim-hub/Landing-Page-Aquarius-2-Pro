@@ -4,7 +4,7 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Aquarius 2 PRO – Máy làm mềm nước Atlas Filtri</title>
-<meta name="description" content="Máy làm mềm nước toàn nhà Aquarius 2 PRO – thương hiệu Atlas Filtri (Italia), nhập khẩu nguyên chiếc, van điện tử chuẩn NSF, chi phí vận hành thấp. Giá 65.000.000đ.">
+<meta name="description" content="Máy làm mềm nước toàn nhà Aquarius 2 PRO – thương hiệu Atlas Filtri (Italia), nhập khẩu nguyên chiếc, bảo hành 5 năm, tặng bộ lọc chặn đầu vào Hydra. Giá 65.000.000đ.">
 <link rel="canonical" href="https://aquarius2pro.makxim.vn/">
 <meta name="theme-color" content="#003f87">
 <link rel="icon" type="image/png" sizes="32x32" href="assets/favicon-32.png">
@@ -15,7 +15,7 @@
 <meta property="og:site_name" content="Makxim">
 <meta property="og:url" content="https://aquarius2pro.makxim.vn/">
 <meta property="og:title" content="Aquarius 2 PRO – Máy làm mềm nước toàn nhà Atlas Filtri">
-<meta property="og:description" content="Chấm dứt cặn vôi, bảo vệ cả ngôi nhà. Thương hiệu Atlas Filtri – Italia, nhập khẩu nguyên chiếc. Test nước miễn phí tại nhà – Hotline 1900 599 894.">
+<meta property="og:description" content="Chấm dứt cặn vôi, bảo vệ cả ngôi nhà. Bảo hành 5 năm, tặng bộ lọc Hydra. Thương hiệu Atlas Filtri – Italia. Test nước miễn phí tại nhà – Hotline 1900 599 894.">
 <meta property="og:image" content="https://aquarius2pro.makxim.vn/assets/og-image.jpg">
 <meta property="og:image:width" content="1200">
 <meta property="og:image:height" content="630">
@@ -165,6 +165,66 @@ header.scrolled .hotline{color:var(--navy)}
 .mini-form .ok-msg{grid-column:1/-1;padding:6px 0;color:var(--navy-2)}
 .mini-form .ok-msg svg{width:36px;height:36px;margin:0 auto 6px}
 .foot-note{margin-top:16px;font-size:12.5px;color:var(--muted);text-align:center}
+
+
+/* Offer chip (hero) */
+.offer-chip{display:inline-flex;align-items:center;gap:12px;margin:0 0 22px;padding:8px 18px 8px 10px;border-radius:16px;background:linear-gradient(90deg,rgba(255,122,26,.25),rgba(255,122,26,.08));border:1px solid rgba(255,179,107,.55);font-size:14px;line-height:1.45;color:#fff;transition:background .2s}
+.offer-chip:hover{background:linear-gradient(90deg,rgba(255,122,26,.35),rgba(255,122,26,.12))}
+.offer-chip img{width:auto;height:52px;filter:drop-shadow(0 4px 8px rgba(0,0,0,.35))}
+.offer-chip b{color:#ffcf9e}
+
+/* Life */
+.life{background:var(--ice)}
+.life .pain{background:#fff}
+
+/* Reviews */
+.reviews{background:#fff}
+.rv-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:22px;margin-top:48px}
+.rv{margin:0;background:#fff;border:1px solid var(--line);border-radius:24px;padding:18px 18px 24px;display:flex;flex-direction:column;gap:12px;box-shadow:0 18px 40px -30px rgba(0,42,92,.4)}
+.rv-img{aspect-ratio:16/10;border-radius:16px;background:repeating-linear-gradient(45deg,#eef4f9 0 12px,#e5eef6 12px 24px);display:grid;place-items:center;color:var(--muted);font-size:13px;overflow:hidden}
+.rv-img img{width:100%;height:100%;object-fit:cover}
+.stars{color:#f5a524;letter-spacing:2px;font-size:17px}
+.rv blockquote{font-size:15.5px;color:var(--ink);line-height:1.6;flex:1}
+.rv figcaption b{display:block;color:var(--navy-2)}
+.rv figcaption span{font-size:13.5px;color:var(--muted)}
+
+/* Value + Gift + Guarantee */
+.value{display:grid;grid-template-columns:1.15fr .85fr;gap:0;margin-top:48px;border-radius:28px;overflow:hidden;box-shadow:var(--shadow);border:1px solid var(--line)}
+.value-col{padding:34px 36px}
+.value-col h3{font-size:20px;margin-bottom:18px}
+.value-col small{display:block;margin-top:16px;font-size:12.5px;opacity:.75}
+.value-col.bad{background:#fff}
+.value-col.bad h3{color:#c2410c}
+.value-col.bad ul{list-style:none;display:grid}
+.value-col.bad li{display:flex;justify-content:space-between;gap:16px;padding:12px 0;border-bottom:1px dashed var(--line);font-size:15px}
+.value-col.bad li b{color:#c2410c;white-space:nowrap}
+.value-col.good{background:linear-gradient(160deg,var(--navy-2),var(--navy));color:#fff;display:flex;flex-direction:column;justify-content:center}
+.v-big{display:flex;align-items:center;gap:14px;padding:12px 0}
+.v-big b{font-size:clamp(30px,3.4vw,40px);font-weight:800;color:#7ef0bd;white-space:nowrap;letter-spacing:-.02em}
+.v-big span{font-size:14.5px;line-height:1.35}
+.v-big small{display:inline;margin:0;opacity:.7;font-size:12.5px}
+.gift{display:grid;grid-template-columns:240px 1fr;gap:34px;align-items:center;margin-top:28px;padding:30px 36px;border-radius:28px;background:linear-gradient(120deg,#fff4e8,#fff 70%);border:1.5px dashed #ffb36b}
+.gift-img{display:flex;justify-content:center;background:radial-gradient(circle,#ffe2c4,transparent 70%);border-radius:50%;padding:10px}
+.gift-img img{height:250px;width:auto;filter:drop-shadow(0 18px 22px rgba(0,0,0,.2))}
+.gift-tag{display:inline-block;background:var(--accent);color:#fff;font-weight:700;font-size:13px;padding:6px 12px;border-radius:999px}
+.gift h3{font-size:clamp(21px,2.4vw,28px);color:var(--navy-2);margin:12px 0 10px}
+.gift h3 em{font-style:normal;color:var(--blue)}
+.gift p{color:var(--muted);font-size:15.5px;margin-bottom:14px}
+.gift ul{list-style:none;display:grid;gap:9px}
+.gift li{display:flex;gap:10px;font-size:15px}
+.gift li svg{flex:none;width:20px;height:20px;color:var(--ok);margin-top:2px}
+.incl li.hl{background:#fff4e8;margin:0 -12px;padding:8px 12px;border-radius:12px}
+.incl li.hl svg{color:var(--accent)}
+.guar{display:grid;grid-template-columns:repeat(4,1fr);gap:16px;margin-top:28px}
+.guar div{background:#fff;border:1px solid var(--line);border-radius:18px;padding:18px;display:grid;grid-template-columns:auto 1fr;column-gap:12px;align-items:center}
+.guar svg{grid-row:span 2;width:34px;height:34px;padding:7px;border-radius:10px;background:var(--ice);color:var(--navy)}
+.guar b{color:var(--navy-2);font-size:15px}
+.guar span{font-size:13px;color:var(--muted)}
+
+/* Specs collapsible */
+details.spec-more{border:0;background:none;box-shadow:none}
+.spec-more summary{padding:0 0 14px;font-size:15px;color:var(--blue);justify-content:flex-end}
+.spec-more summary::after{content:none}
 
 /* Compare */
 .compare{background:linear-gradient(180deg,#f6fafd,#fff)}
@@ -330,13 +390,17 @@ footer{background:#06162b;color:rgba(255,255,255,.65);padding:56px 0 100px;font-
   .hero-grid,.how-grid,.spec-wrap,.contact-grid,.cmp,.calc,.price-box,.gallery{grid-template-columns:1fr}
   .hero-visual{margin-top:20px}.pipe{width:min(420px,92%)}
   .pain-grid{grid-template-columns:1fr 1fr}
-  .worry-grid,.mini-form{grid-template-columns:1fr}
+  .worry-grid,.mini-form,.value,.rv-grid{grid-template-columns:1fr}
+  .guar{grid-template-columns:1fr 1fr}
   .feat-grid{grid-template-columns:1fr 1fr}
   .tag-1{left:0;bottom:12%}.hero-prod{right:0;width:min(180px,36%)}
 }
 @media (max-width:620px){
   .pain-grid,.feat-grid{grid-template-columns:1fr}
   .mf-fields{grid-template-columns:1fr}.mf-fields .btn{width:100%}
+  .gift{grid-template-columns:1fr;padding:24px}.gift-img img{height:200px}
+  .guar{grid-template-columns:1fr}.value-col{padding:26px}
+  .offer-chip{font-size:13px}
   .auth-head,.mini-form{padding:22px}
   .nav .btn{display:none}
   .m-cta{display:flex}
@@ -382,7 +446,7 @@ footer{background:#06162b;color:rgba(255,255,255,.65);padding:56px 0 100px;font-
   <div class="wrap nav">
     <a href="#top"><img class="logo" src="assets/atlas-logo.webp" alt="Atlas Filtri"></a>
     <nav class="nav-links">
-      <a href="#van-de">Vấn đề</a><a href="#lo-ngai">Nỗi lo</a><a href="#cong-nghe">Công nghệ</a><a href="#tinh-nang">Tính năng</a><a href="#thong-so">Thông số</a><a href="#bang-gia">Bảng giá</a><a href="#faq">Hỏi đáp</a>
+      <a href="#lo-ngai">Nỗi lo</a><a href="#cong-nghe">Công nghệ</a><a href="#tinh-nang">Tính năng</a><a href="#chi-phi">Chi phí</a><a href="#uu-dai">Ưu đãi</a><a href="#faq">Hỏi đáp</a>
     </nav>
     <div class="nav-right">
       <a href="tel:1900599894" class="hotline"><svg><use href="#i-phone"/></svg>1900 599 894</a>
@@ -407,12 +471,13 @@ footer{background:#06162b;color:rgba(255,255,255,.65);padding:56px 0 100px;font-
       </ul>
       <div class="hero-cta">
         <a href="#dang-ky" class="btn btn-primary">Đăng ký test nước miễn phí →</a>
-        <a href="#bang-gia" class="btn btn-ghost">Xem giá: 65.000.000đ</a>
+        <a href="#uu-dai" class="btn btn-ghost">Xem ưu đãi tặng kèm</a>
       </div>
+      <a href="#uu-dai" class="offer-chip"><img src="assets/hydra.webp" alt="" width="234" height="430"><span><b>Ưu đãi:</b> Tặng bộ lọc chặn đầu vào <b>Hydra</b> (Atlas Filtri)<br>+ <b>Bảo hành 5 năm</b></span></a>
       <div class="badges">
         <div class="badge"><svg><use href="#i-flag"/></svg>Thương hiệu Atlas Filtri – Italia</div>
         <div class="badge"><svg><use href="#i-box"/></svg>Nhập khẩu nguyên chiếc</div>
-        <div class="badge"><svg><use href="#i-shield"/></svg>Van điện tử chuẩn NSF</div>
+        <div class="badge"><svg><use href="#i-shield"/></svg>Bảo hành 5 năm</div>
       </div>
     </div>
     <div class="hero-visual">
@@ -450,26 +515,6 @@ footer{background:#06162b;color:rgba(255,255,255,.65);padding:56px 0 100px;font-
   </div>
 </section>
 
-<!-- PAIN -->
-<section id="van-de">
-  <div class="wrap">
-    <div class="center reveal">
-      <span class="eyebrow">Dấu hiệu nước cứng</span>
-      <h2>Ngôi nhà của bạn có đang gặp những điều này?</h2>
-      <p class="lead">Nước cứng – phổ biến ở nước giếng khoan và nhiều khu vực miền Bắc – âm thầm phá hỏng thiết bị và làm tăng chi phí sinh hoạt.</p>
-    </div>
-    <div class="pain-grid">
-      <div class="pain reveal"><div class="ic"><svg><use href="#i-shower"/></svg></div><h3>Vòi sen tắc, kính mờ</h3><p>Cặn trắng bám vòi, sen tắm, vách kính – chà mãi vẫn không sạch.</p></div>
-      <div class="pain reveal"><div class="ic"><svg><use href="#i-kettle"/></svg></div><h3>Ấm đun đóng vôi</h3><p>Lớp cặn dày dưới đáy ấm, nồi – ảnh hưởng cả mùi vị đồ uống.</p></div>
-      <div class="pain reveal"><div class="ic"><svg><use href="#i-heater"/></svg></div><h3>Bình nóng lạnh hỏng sớm</h3><p>Cặn bám thanh đốt làm tốn điện, giảm tuổi thọ thiết bị.</p></div>
-      <div class="pain reveal"><div class="ic"><svg><use href="#i-hair"/></svg></div><h3>Da khô, tóc xơ</h3><p>Xà phòng khó tạo bọt, tắm xong da căng rít, tóc khô cứng.</p></div>
-    </div>
-    <div class="culprit reveal">
-      <p>Thủ phạm: <span>ion Canxi (Ca²⁺) &amp; Magie (Mg²⁺)</span> trong nước cứng.</p>
-      <a href="#cong-nghe" class="btn btn-ghost">Xem giải pháp ↓</a>
-    </div>
-  </div>
-</section>
 
 <!-- WORRIES -->
 <section class="worry" id="lo-ngai">
@@ -484,7 +529,7 @@ footer{background:#06162b;color:rgba(255,255,255,.65);padding:56px 0 100px;font-
         <span class="wnum">01</span>
         <h3>“Trả tiền hàng cao cấp – nhận về hàng kém chất lượng”</h3>
         <p>Thị trường tràn lan máy gắn mác châu Âu với giá “mềm” bất ngờ. Dùng vài tháng van báo lỗi, nước vẫn cứng, bảo hành không biết tìm ai.</p>
-        <div class="wfix"><svg><use href="#i-shield"/></svg><span><b>Với Makxim:</b> phân phối chính hãng Atlas Filtri, test nước trước khi mua, hợp đồng &amp; bảo hành rõ ràng.</span></div>
+        <div class="wfix"><svg><use href="#i-shield"/></svg><span><b>Với Makxim:</b> hàng chính hãng Atlas Filtri, test nước trước khi mua, <b>bảo hành 5 năm</b> ghi rõ trong hợp đồng.</span></div>
       </article>
       <article class="wcard reveal">
         <span class="wnum">02</span>
@@ -513,7 +558,7 @@ footer{background:#06162b;color:rgba(255,255,255,.65);padding:56px 0 100px;font-
             <tr><td>Hạt nhựa</td><td class="good"><svg><use href="#i-check"/></svg>Đúng chủng loại, đúng định lượng 25 L theo thiết kế</td><td class="bad"><svg><use href="#i-x"/></svg>Không rõ nguồn gốc, dễ đổ thiếu, nhanh mất tác dụng</td></tr>
             <tr><td>Kết cấu</td><td class="good"><svg><use href="#i-check"/></svg>Tủ liền khối – bồn muối, phao, khớp tràn đồng bộ</td><td class="bad"><svg><use href="#i-x"/></svg>Cột + thùng muối rời, nhiều điểm nối dễ rò rỉ</td></tr>
             <tr><td>Thông số</td><td class="good"><svg><use href="#i-check"/></svg>Công bố rõ ràng, có tài liệu kỹ thuật của hãng</td><td class="bad"><svg><use href="#i-x"/></svg>Thông số “ước chừng”, không kiểm chứng được</td></tr>
-            <tr><td>Bảo hành</td><td class="good"><svg><use href="#i-check"/></svg>Theo tiêu chuẩn thương hiệu, linh kiện chính hãng</td><td class="bad"><svg><use href="#i-x"/></svg>Phụ thuộc đơn vị tự lắp ráp</td></tr>
+            <tr><td>Bảo hành</td><td class="good"><svg><use href="#i-check"/></svg>Bảo hành 5 năm, linh kiện chính hãng</td><td class="bad"><svg><use href="#i-x"/></svg>Phụ thuộc đơn vị tự lắp ráp</td></tr>
           </tbody>
         </table>
       </div>
@@ -533,6 +578,40 @@ footer{background:#06162b;color:rgba(255,255,255,.65);padding:56px 0 100px;font-
     <p class="foot-note reveal">* Ước tính gồm muối (~10.000đ/kg), nước hoàn nguyên và điện năng; chi phí thực tế phụ thuộc độ cứng nước và lượng sử dụng.</p>
   </div>
 </section>
+
+<!-- REVIEWS -->
+<!-- ĐÁNH GIÁ KHÁCH HÀNG: nội dung dưới đây là MẪU. Section đang ẩn (hidden) trên trang thật;
+     xem trước bằng cách thêm ?mau=1 vào URL. Khi có đánh giá thật: thay nội dung + ảnh (thay <span>Ảnh công trình</span> bằng <img>), rồi xóa thuộc tính hidden. -->
+<section class="reviews" id="danh-gia" hidden>
+  <div class="wrap">
+    <div class="center reveal">
+      <span class="eyebrow">Khách hàng nói gì</span>
+      <h2>Gia đình đã dùng Aquarius 2 PRO</h2>
+      <p class="lead">Những phản hồi thực tế sau khi lắp đặt.</p>
+    </div>
+    <div class="rv-grid">
+      <figure class="rv reveal">
+        <div class="rv-img"><span>Ảnh công trình</span></div>
+        <div class="stars" aria-label="5 sao">★★★★★</div>
+        <blockquote>“Nhà dùng giếng khoan, trước đây vòi sen tháng nào cũng phải tháo ra ngâm giấm. Lắp máy được nửa năm, kính tắm vẫn trong, bình nóng lạnh hết kêu lục bục.”</blockquote>
+        <figcaption><b>Anh Minh</b><span>Biệt thự · Gia Lâm, Hà Nội</span></figcaption>
+      </figure>
+      <figure class="rv reveal">
+        <div class="rv-img"><span>Ảnh công trình</span></div>
+        <div class="stars" aria-label="5 sao">★★★★★</div>
+        <blockquote>“Tôi so sánh 3 báo giá, chọn Makxim vì được test nước tận nhà và giải thích rõ máy nguyên chiếc khác hàng lắp ráp thế nào. Da con nhỏ đỡ khô hẳn.”</blockquote>
+        <figcaption><b>Chị Hương</b><span>Nhà phố · Long Biên, Hà Nội</span></figcaption>
+      </figure>
+      <figure class="rv reveal">
+        <div class="rv-img"><span>Ảnh công trình</span></div>
+        <div class="stars" aria-label="5 sao">★★★★★</div>
+        <blockquote>“Máy chạy êm, màn hình dễ dùng. Một bao muối dùng gần 3 tháng, chi phí thấp hơn tôi nghĩ nhiều. Kỹ thuật lắp gọn gàng, đúng hẹn.”</blockquote>
+        <figcaption><b>Anh Tuấn</b><span>Nhà vườn · Bắc Ninh</span></figcaption>
+      </figure>
+    </div>
+  </div>
+</section>
+
 
 <!-- COMPARE -->
 <section class="compare">
@@ -621,6 +700,24 @@ footer{background:#06162b;color:rgba(255,255,255,.65);padding:56px 0 100px;font-
   </div>
 </section>
 
+<!-- LIFE -->
+<section class="life" id="loi-ich">
+  <div class="wrap">
+    <div class="center reveal">
+      <span class="eyebrow">Sống cùng nước mềm</span>
+      <h2>Ngôi nhà thay đổi thế nào khi không còn cặn vôi?</h2>
+      <p class="lead">Không chỉ là bảo vệ thiết bị – nước mềm nâng chất lượng sống của cả gia đình mỗi ngày.</p>
+    </div>
+    <div class="pain-grid">
+      <div class="pain reveal"><div class="ic"><svg><use href="#i-shower"/></svg></div><h3>Phòng tắm luôn sáng bóng</h3><p>Vách kính, sen vòi, thiết bị sứ không còn ố trắng – vệ sinh nhanh, giữ vẻ đẹp như mới.</p></div>
+      <div class="pain reveal"><div class="ic"><svg><use href="#i-hair"/></svg></div><h3>Da mịn, tóc mềm</h3><p>Tắm xong không còn cảm giác căng rít, tóc suôn mượt hơn – dịu nhẹ cho cả trẻ nhỏ.</p></div>
+      <div class="pain reveal"><div class="ic"><svg><use href="#i-heater"/></svg></div><h3>Thiết bị bền, tiết kiệm điện</h3><p>Bình nóng lạnh, máy giặt, máy rửa bát không đóng cặn – vận hành hiệu quả, ít hỏng vặt.</p></div>
+      <div class="pain reveal"><div class="ic"><svg><use href="#i-leaf"/></svg></div><h3>Ít xà phòng, ít hóa chất</h3><p>Xà phòng tạo bọt dễ hơn, không cần chất tẩy cặn – tiết kiệm và thân thiện môi trường.</p></div>
+    </div>
+  </div>
+</section>
+
+
 <!-- FEATURES -->
 <section class="features" id="tinh-nang">
   <div class="wrap">
@@ -663,35 +760,6 @@ footer{background:#06162b;color:rgba(255,255,255,.65);padding:56px 0 100px;font-
   </div>
 </section>
 
-<!-- SPECS -->
-<section class="specs" id="thong-so">
-  <div class="wrap spec-wrap">
-    <div class="reveal">
-      <span class="eyebrow">Thông số kỹ thuật</span>
-      <h2>Thông số chính hãng</h2>
-      <p class="lead">Số liệu theo tài liệu kỹ thuật chính thức của Atlas Filtri.</p>
-      <div class="warn"><svg><use href="#i-alert"/></svg><div><b>Lưu ý lắp đặt:</b> Nhiệt độ nước tối đa 38°C – máy được lắp tại <b>đường nước lạnh đầu nguồn</b>, trước bình nóng lạnh. Nước làm mềm không thay thế nước uống đã qua lọc RO.</div></div>
-    </div>
-    <table class="spec-table reveal">
-      <tr><td>Model</td><td>Aquarius 2 PRO</td></tr>
-      <tr><td>Loại máy</td><td>Làm mềm tỷ lệ, dạng tủ liền khối</td></tr>
-      <tr><td>Công suất chu kỳ</td><td>150 m³ × °f</td></tr>
-      <tr><td>Thể tích hạt nhựa</td><td>25 L</td></tr>
-      <tr><td>Muối / lần hoàn nguyên</td><td>2,4 kg</td></tr>
-      <tr><td>Nước / lần hoàn nguyên</td><td>132 L</td></tr>
-      <tr><td>Kiểu hoàn nguyên</td><td>Ngược dòng (UF)</td></tr>
-      <tr><td>Lưu lượng khuyến nghị / tối đa</td><td>1,6 / 2,4 m³/h</td></tr>
-      <tr><td>Áp lực tối đa</td><td>8 bar</td></tr>
-      <tr><td>Nhiệt độ nước tối đa</td><td>38°C</td></tr>
-      <tr><td>Độ cứng đầu vào tối đa</td><td>50°f (500 ppm CaCO₃)</td></tr>
-      <tr><td>Sức chứa muối</td><td>64 kg</td></tr>
-      <tr><td>Kết nối vào / ra</td><td>3/4"</td></tr>
-      <tr><td>Van điều khiển</td><td>Điện tử, chứng nhận NSF</td></tr>
-      <tr><td>Thương hiệu</td><td>Atlas Filtri – Italia</td></tr>
-      <tr><td>Hình thức</td><td>Nhập khẩu nguyên chiếc</td></tr>
-    </table>
-  </div>
-</section>
 
 <!-- CALCULATOR -->
 <section id="chi-phi">
@@ -733,28 +801,73 @@ footer{background:#06162b;color:rgba(255,255,255,.65);padding:56px 0 100px;font-
 </section>
 
 <!-- PRICING -->
-<section class="pricing" id="bang-gia">
+<section class="pricing" id="uu-dai">
   <div class="wrap">
     <div class="center reveal">
-      <span class="eyebrow">Bảng giá</span>
+      <span class="eyebrow">Ưu đãi &amp; bảng giá</span>
       <h2>Đầu tư một lần – bảo vệ cả ngôi nhà</h2>
+      <p class="lead">Chi phí cặn vôi gây ra mỗi năm thường lớn hơn bạn nghĩ. Aquarius 2 PRO chặn nó ngay từ gốc.</p>
     </div>
-    <div class="price-box reveal">
+
+    <div class="value reveal">
+      <div class="value-col bad">
+        <h3>Chi phí cặn vôi có thể gây ra</h3>
+        <ul>
+          <li><span>Vệ sinh, thay thanh đốt bình nóng lạnh</span><b>0,5 – 1 tr/lần</b></li>
+          <li><span>Thay bình nóng lạnh hỏng sớm</span><b>3 – 8 tr/bình</b></li>
+          <li><span>Thay sen vòi, van, thiết bị vệ sinh ố, tắc</span><b>2 – 10 tr</b></li>
+          <li><span>Sửa máy giặt, máy rửa bát do đóng cặn</span><b>1 – 3 tr/lần</b></li>
+          <li><span>Hóa chất tẩy cặn, công vệ sinh kính, sứ</span><b>Hằng tháng</b></li>
+        </ul>
+        <small>* Chi phí tham khảo thị trường, thay đổi theo thiết bị và số phòng tắm.</small>
+      </div>
+      <div class="value-col good">
+        <h3>Với Aquarius 2 PRO</h3>
+        <div class="v-big"><b>&lt; 18.000đ</b><span>/ngày khấu hao<br><small>tính trên 10 năm sử dụng *</small></span></div>
+        <div class="v-big"><b>~3.300đ</b><span>/ngày vận hành<br><small>gia đình 4 người, nước 30°f</small></span></div>
+        <small>* Giả định tham khảo: 65.000.000đ ÷ 10 năm. Thời gian sử dụng thực tế phụ thuộc chất lượng nước &amp; bảo trì.</small>
+      </div>
+    </div>
+
+    <div class="gift reveal">
+      <div class="gift-img"><img src="assets/hydra.webp" alt="Bộ lọc chặn đầu vào tự rửa Atlas Filtri Hydra" width="234" height="430" loading="lazy"></div>
+      <div class="gift-body">
+        <span class="gift-tag">🎁 Quà tặng kèm</span>
+        <h3>Bộ lọc chặn đầu vào tự rửa <em>Atlas Filtri Hydra</em></h3>
+        <p>Lắp ngay trước Aquarius 2 PRO, Hydra giữ lại cát, gỉ sét và cặn bẩn kích thước lớn – lớp “lá chắn” đầu tiên bảo vệ van điều khiển, hạt nhựa và toàn bộ đường ống trong nhà.</p>
+        <ul>
+          <li><svg><use href="#i-check"/></svg>Súc rửa ngược ngay tại chỗ – chỉ cần mở van xả, không phải tháo lõi</li>
+          <li><svg><use href="#i-check"/></svg>Cốc lọc trong suốt – nhìn thấy cặn, biết khi nào cần xả</li>
+          <li><svg><use href="#i-check"/></svg>Lõi lưới bền, dùng lâu dài; vật liệu an toàn cho nước sinh hoạt theo tiêu chuẩn EU</li>
+          <li><svg><use href="#i-check"/></svg>Cùng thương hiệu Atlas Filtri – đồng bộ với hệ thống làm mềm</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="price-box reveal" id="bang-gia">
       <div class="pb-img"><span class="ribbon">Chính hãng Atlas Filtri</span><img src="assets/aquarius-open.webp" alt="Aquarius 2 PRO" loading="lazy"></div>
       <div class="pb-body">
         <h3>Aquarius 2 PRO</h3>
         <div class="model">Máy làm mềm nước toàn nhà · 25 L hạt nhựa</div>
         <div class="price">65.000.000<small> đ</small></div>
-        <div class="vat">Giá niêm yết</div>
+        <div class="vat">Giá niêm yết · Trọn gói gồm:</div>
         <ul class="incl">
-          <li><svg><use href="#i-check"/></svg>Chính hãng Atlas Filtri – nhập khẩu nguyên chiếc, không lắp ráp</li>
+          <li><svg><use href="#i-check"/></svg>Máy Aquarius 2 PRO – nhập khẩu nguyên chiếc, không lắp ráp</li>
+          <li class="hl"><svg><use href="#i-check"/></svg><span><b>Tặng</b> bộ lọc chặn đầu vào tự rửa Hydra</span></li>
+          <li class="hl"><svg><use href="#i-check"/></svg><span><b>Bảo hành 5 năm</b></span></li>
           <li><svg><use href="#i-check"/></svg>Khảo sát &amp; test độ cứng nước miễn phí</li>
-          <li><svg><use href="#i-check"/></svg>Tư vấn giải pháp lọc tổng thể (làm mềm + RO)</li>
           <li><svg><use href="#i-check"/></svg>Lắp đặt &amp; hướng dẫn vận hành tận nơi</li>
-          <li><svg><use href="#i-check"/></svg>Bảo hành chính hãng, bảo trì định kỳ</li>
+          <li><svg><use href="#i-check"/></svg>Tư vấn giải pháp tổng thể (làm mềm + RO)</li>
         </ul>
-        <a href="#dang-ky" class="btn btn-primary" style="width:100%">Đặt lịch tư vấn ngay</a>
+        <a href="#dang-ky" class="btn btn-primary" style="width:100%">Nhận ưu đãi &amp; đặt lịch test nước</a>
       </div>
+    </div>
+
+    <div class="guar reveal">
+      <div><svg><use href="#i-shield"/></svg><b>Bảo hành 5 năm</b><span>Yên tâm sử dụng dài lâu</span></div>
+      <div><svg><use href="#i-box"/></svg><b>Nhập khẩu nguyên chiếc</b><span>Đồng bộ từ van đến tủ</span></div>
+      <div><svg><use href="#i-flask"/></svg><b>Test nước miễn phí</b><span>Tư vấn đúng nhu cầu</span></div>
+      <div><svg><use href="#i-tool"/></svg><b>Lắp đặt tận nơi</b><span>Kỹ thuật Makxim thực hiện</span></div>
     </div>
   </div>
 </section>
@@ -764,9 +877,10 @@ footer{background:#06162b;color:rgba(255,255,255,.65);padding:56px 0 100px;font-
   <div class="wrap contact-grid">
     <div class="reveal">
       <span class="eyebrow" style="color:var(--sky)">Đăng ký tư vấn</span>
-      <h2>Nhận test nước miễn phí tại nhà</h2>
+      <h2>Nhận ưu đãi &amp; test nước miễn phí tại nhà</h2>
       <p class="lead">Để lại thông tin – chuyên viên Makxim sẽ liên hệ trong thời gian sớm nhất để khảo sát và đề xuất giải pháp phù hợp.</p>
       <ul class="perks">
+        <li><span><svg><use href="#i-check"/></svg></span><b>Tặng bộ lọc Hydra + bảo hành 5 năm</b></li>
         <li><span><svg><use href="#i-flask"/></svg></span>Đo độ cứng nước thực tế</li>
         <li><span><svg><use href="#i-tool"/></svg></span>Khảo sát vị trí lắp đặt đầu nguồn</li>
         <li><span><svg><use href="#i-box"/></svg></span>Hướng dẫn phân biệt máy nguyên chiếc &amp; hàng lắp ráp</li>
@@ -779,7 +893,7 @@ footer{background:#06162b;color:rgba(255,255,255,.65);padding:56px 0 100px;font-
     </div>
     <form id="leadForm" class="reveal lead-form" novalidate data-product="Aquarius 2 PRO">
       <div id="formBody">
-        <h3>Đăng ký nhận tư vấn</h3>
+        <h3>Đăng ký nhận ưu đãi</h3>
         <p>Miễn phí – không ràng buộc.</p>
         <input class="in" name="name" placeholder="Họ và tên *" required autocomplete="name">
         <input class="in" name="phone" type="tel" placeholder="Số điện thoại *" required autocomplete="tel" pattern="0[0-9]{9,10}">
@@ -802,6 +916,38 @@ footer{background:#06162b;color:rgba(255,255,255,.65);padding:56px 0 100px;font-
   </div>
 </section>
 
+<!-- SPECS -->
+<section class="specs" id="thong-so">
+  <div class="wrap spec-wrap">
+    <div class="reveal">
+      <span class="eyebrow">Thông số kỹ thuật</span>
+      <h2>Thông số chính hãng</h2>
+      <p class="lead">Số liệu theo tài liệu kỹ thuật chính thức của Atlas Filtri.</p>
+      <div class="warn"><svg><use href="#i-alert"/></svg><div><b>Lưu ý lắp đặt:</b> Nhiệt độ nước tối đa 38°C – máy được lắp tại <b>đường nước lạnh đầu nguồn</b>, trước bình nóng lạnh. Nước làm mềm không thay thế nước uống đã qua lọc RO.</div></div>
+    </div>
+    <details class="spec-more reveal"><summary>Xem bảng thông số đầy đủ ↓</summary>
+    <table class="spec-table">
+      <tr><td>Model</td><td>Aquarius 2 PRO</td></tr>
+      <tr><td>Loại máy</td><td>Làm mềm tỷ lệ, dạng tủ liền khối</td></tr>
+      <tr><td>Công suất chu kỳ</td><td>150 m³ × °f</td></tr>
+      <tr><td>Thể tích hạt nhựa</td><td>25 L</td></tr>
+      <tr><td>Muối / lần hoàn nguyên</td><td>2,4 kg</td></tr>
+      <tr><td>Nước / lần hoàn nguyên</td><td>132 L</td></tr>
+      <tr><td>Kiểu hoàn nguyên</td><td>Ngược dòng (UF)</td></tr>
+      <tr><td>Lưu lượng khuyến nghị / tối đa</td><td>1,6 / 2,4 m³/h</td></tr>
+      <tr><td>Áp lực tối đa</td><td>8 bar</td></tr>
+      <tr><td>Nhiệt độ nước tối đa</td><td>38°C</td></tr>
+      <tr><td>Độ cứng đầu vào tối đa</td><td>50°f (500 ppm CaCO₃)</td></tr>
+      <tr><td>Sức chứa muối</td><td>64 kg</td></tr>
+      <tr><td>Kết nối vào / ra</td><td>3/4"</td></tr>
+      <tr><td>Van điều khiển</td><td>Điện tử, chứng nhận NSF</td></tr>
+      <tr><td>Thương hiệu</td><td>Atlas Filtri – Italia</td></tr>
+      <tr><td>Hình thức</td><td>Nhập khẩu nguyên chiếc</td></tr>
+    </table>
+    </details>
+  </div>
+</section>
+
 <!-- FAQ -->
 <section id="faq">
   <div class="wrap">
@@ -810,6 +956,9 @@ footer{background:#06162b;color:rgba(255,255,255,.65);padding:56px 0 100px;font-
       <h2>Câu hỏi thường gặp</h2>
     </div>
     <div class="faq-list">
+      <details class="reveal"><summary>Chính sách bảo hành như thế nào?</summary><p>Aquarius 2 PRO được bảo hành 5 năm. Điều kiện và phạm vi bảo hành được ghi cụ thể trong hợp đồng/phiếu bảo hành khi lắp đặt. Kỹ thuật Makxim hỗ trợ kiểm tra, bảo trì trong suốt quá trình sử dụng.</p></details>
+      <details class="reveal"><summary>Bộ lọc Hydra tặng kèm dùng để làm gì?</summary><p>Hydra là bộ lọc chặn đầu vào tự rửa của Atlas Filtri, lắp trước máy làm mềm để giữ lại cát, gỉ sét, cặn bẩn lớn. Nhờ đó van và hạt nhựa của Aquarius 2 PRO được bảo vệ, hệ thống bền hơn. Khi cốc lọc bám cặn, chỉ cần mở van xả để súc rửa ngược.</p></details>
+      <details class="reveal"><summary>Làm sao biết máy là hàng nhập khẩu nguyên chiếc?</summary><p>Máy nguyên chiếc có kết cấu tủ liền khối đồng bộ, van điều khiển được cài đặt đúng model, có tem nhãn và số serial của hãng trên thiết bị. Chuyên viên Makxim sẽ hướng dẫn bạn kiểm tra trực tiếp khi khảo sát và khi bàn giao.</p></details>
       <details class="reveal"><summary>Máy làm mềm nước khác máy lọc RO như thế nào?</summary><p>Máy làm mềm xử lý độ cứng (canxi, magie) cho toàn bộ nước sinh hoạt trong nhà, chống cặn vôi cho đường ống và thiết bị. Máy RO lọc nước uống tại một vòi. Hai thiết bị bổ trợ cho nhau.</p></details>
       <details class="reveal"><summary>Nước sau làm mềm có uống trực tiếp được không?</summary><p>Aquarius 2 PRO được thiết kế để xử lý nước sinh hoạt. Để uống trực tiếp, nên dùng thêm máy lọc RO tại bếp – nước đã làm mềm còn giúp màng RO bền hơn.</p></details>
       <details class="reveal"><summary>Bao lâu phải thêm muối một lần?</summary><p>Bồn chứa tối đa 64 kg muối. Với gia đình 4 người và nước có độ cứng trung bình, một bao muối 25 kg thường dùng được vài tháng. Bạn có thể dùng công cụ ước tính ở trên để tham khảo.</p></details>
@@ -846,6 +995,9 @@ footer{background:#06162b;color:rgba(255,255,255,.65);padding:56px 0 100px;font-
 </div>
 
 <script>
+// Đánh giá mẫu: chỉ hiện khi xem trước với ?mau=1
+if(new URLSearchParams(location.search).has('mau'))document.getElementById('danh-gia').hidden=false;
+
 // Header on scroll
 const hdr=document.getElementById('hdr');
 const onScroll=()=>hdr.classList.toggle('scrolled',scrollY>40);
