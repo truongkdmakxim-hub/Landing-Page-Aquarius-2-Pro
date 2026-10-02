@@ -540,7 +540,7 @@ footer{background:#06162b;color:rgba(255,255,255,.65);padding:56px 0 100px;font-
       <article class="wcard reveal">
         <span class="wnum">03</span>
         <h3>“Sợ chi phí vận hành hằng tháng đắt đỏ”</h3>
-        <p class="wstat"><b>~3.300đ</b>/ngày<small>gia đình 4 người, nước 30°f *</small></p>
+        <p class="wstat"><b>~3.300đ</b>/ngày<small>gia đình 4 người, nước 300 ppm *</small></p>
         <p>Van tỷ lệ chỉ hoàn nguyên khi thực sự cần, chỉ 120 g muối/lít hạt nhựa – thuộc nhóm thấp nhất thị trường. Điện năng không đáng kể.</p>
         <div class="wfix"><svg><use href="#i-leaf"/></svg><span><a href="#chi-phi">Tự tính chi phí cho nhà bạn ↓</a></span></div>
       </article>
@@ -752,7 +752,7 @@ footer{background:#06162b;color:rgba(255,255,255,.65);padding:56px 0 100px;font-
         <div class="mini-specs reveal">
           <div><b>25 L</b><span>Hạt nhựa</span></div>
           <div><b>64 kg</b><span>Sức chứa muối</span></div>
-          <div><b>150</b><span>m³×°f công suất chu kỳ</span></div>
+          <div><b>1,5 kg</b><span>CaCO₃ xử lý mỗi chu kỳ</span></div>
           <div><b>3/4"</b><span>Kết nối vào/ra</span></div>
         </div>
       </div>
@@ -776,9 +776,9 @@ footer{background:#06162b;color:rgba(255,255,255,.65);padding:56px 0 100px;font-
           <input type="range" id="ppl" min="1" max="12" value="4">
         </div>
         <div class="field">
-          <label for="hard">Độ cứng nước <output id="hardO">30°f</output></label>
-          <input type="range" id="hard" min="5" max="60" value="30">
-          <div class="hint">Chưa biết độ cứng? Makxim test nước miễn phí tại nhà. Tham khảo: nước máy 10–25°f, nước giếng khoan 25–50°f.</div>
+          <label for="hard">Độ cứng nước <output id="hardO">300 ppm</output></label>
+          <input type="range" id="hard" min="50" max="600" step="10" value="300">
+          <div class="hint">Chưa biết độ cứng? Makxim test nước miễn phí tại nhà. Tham khảo: nước máy 100–250 ppm, nước giếng khoan 250–500 ppm (ppm = mg/L CaCO₃).</div>
         </div>
         <div class="field">
           <label for="use">Lượng nước / người / ngày <output id="useO">150 L</output></label>
@@ -793,8 +793,8 @@ footer{background:#06162b;color:rgba(255,255,255,.65);padding:56px 0 100px;font-
           <div><b id="rWater">18</b><span>m³ nước mềm / tháng</span></div>
         </div>
         <div class="res-cost"><span>Chi phí vận hành ước tính</span><b id="rCost">98.000đ</b><small>/ tháng · khoảng <b id="rDay">3.300đ</b>/ngày</small></div>
-        <div class="res-warn" id="rWarn">Độ cứng vượt 50°f – cần khảo sát để thiết kế hệ thống tiền xử lý phù hợp.</div>
-        <p class="res-note">* Kết quả mang tính tham khảo, dựa trên công suất chu kỳ 150 m³×°f, 2,4 kg muối &amp; 132 L nước/lần hoàn nguyên; giả định muối 10.000đ/kg, nước 12.000đ/m³, điện ~6.000đ/tháng. Van tỷ lệ có thể giúp chi phí thực tế thấp hơn.</p>
+        <div class="res-warn" id="rWarn">Độ cứng vượt 500 ppm – cần khảo sát để thiết kế hệ thống tiền xử lý phù hợp.</div>
+        <p class="res-note">* Kết quả mang tính tham khảo, dựa trên công suất chu kỳ 1,5 kg CaCO₃ (≈ 5 m³ nước ở 300 ppm), 2,4 kg muối &amp; 132 L nước/lần hoàn nguyên; giả định muối 10.000đ/kg, nước 12.000đ/m³, điện ~6.000đ/tháng. Van tỷ lệ có thể giúp chi phí thực tế thấp hơn.</p>
       </div>
     </div>
   </div>
@@ -824,7 +824,7 @@ footer{background:#06162b;color:rgba(255,255,255,.65);padding:56px 0 100px;font-
       <div class="value-col good">
         <h3>Với Aquarius 2 PRO</h3>
         <div class="v-big"><b>&lt; 18.000đ</b><span>/ngày khấu hao<br><small>tính trên 10 năm sử dụng *</small></span></div>
-        <div class="v-big"><b>~3.300đ</b><span>/ngày vận hành<br><small>gia đình 4 người, nước 30°f</small></span></div>
+        <div class="v-big"><b>~3.300đ</b><span>/ngày vận hành<br><small>gia đình 4 người, nước 300 ppm</small></span></div>
         <small>* Giả định tham khảo: 65.000.000đ ÷ 10 năm. Thời gian sử dụng thực tế phụ thuộc chất lượng nước &amp; bảo trì.</small>
       </div>
     </div>
@@ -929,7 +929,7 @@ footer{background:#06162b;color:rgba(255,255,255,.65);padding:56px 0 100px;font-
     <table class="spec-table">
       <tr><td>Model</td><td>Aquarius 2 PRO</td></tr>
       <tr><td>Loại máy</td><td>Làm mềm tỷ lệ, dạng tủ liền khối</td></tr>
-      <tr><td>Công suất chu kỳ</td><td>150 m³ × °f</td></tr>
+      <tr><td>Công suất chu kỳ</td><td>1,5 kg CaCO₃ (≈ 5 m³ nước ở 300 ppm)</td></tr>
       <tr><td>Thể tích hạt nhựa</td><td>25 L</td></tr>
       <tr><td>Muối / lần hoàn nguyên</td><td>2,4 kg</td></tr>
       <tr><td>Nước / lần hoàn nguyên</td><td>132 L</td></tr>
@@ -937,7 +937,7 @@ footer{background:#06162b;color:rgba(255,255,255,.65);padding:56px 0 100px;font-
       <tr><td>Lưu lượng khuyến nghị / tối đa</td><td>1,6 / 2,4 m³/h</td></tr>
       <tr><td>Áp lực tối đa</td><td>8 bar</td></tr>
       <tr><td>Nhiệt độ nước tối đa</td><td>38°C</td></tr>
-      <tr><td>Độ cứng đầu vào tối đa</td><td>50°f (500 ppm CaCO₃)</td></tr>
+      <tr><td>Độ cứng đầu vào tối đa</td><td>500 ppm CaCO₃</td></tr>
       <tr><td>Sức chứa muối</td><td>64 kg</td></tr>
       <tr><td>Kết nối vào / ra</td><td>3/4"</td></tr>
       <tr><td>Van điều khiển</td><td>Điện tử, chứng nhận NSF</td></tr>
@@ -1017,9 +1017,9 @@ const $=id=>document.getElementById(id);
 const SALT_PRICE=10000, WATER_PRICE=12000, ELEC_MONTH=6000; // đ/kg, đ/m³, đ/tháng
 function calc(){
   const p=+$('ppl').value,h=+$('hard').value,u=+$('use').value;
-  $('pplO').textContent=p+' người';$('hardO').textContent=h+'°f';$('useO').textContent=u+' L';
+  $('pplO').textContent=p+' người';$('hardO').textContent=h+' ppm';$('useO').textContent=u+' L';
   const daily=p*u/1000;                 // m³/ngày
-  const between=150/h;                   // m³ giữa 2 lần hoàn nguyên
+  const between=1500/h;                  // m³ giữa 2 lần hoàn nguyên (1,5 kg CaCO₃ ÷ ppm)
   const days=between/daily;
   const regenMonth=30/days;
   const salt=regenMonth*2.4;
@@ -1030,7 +1030,7 @@ function calc(){
   const cost=salt*SALT_PRICE+regenMonth*0.132*WATER_PRICE+ELEC_MONTH;
   const vnd=n=>(Math.round(n/100)*100).toLocaleString('vi-VN')+'đ';
   $('rCost').textContent=vnd(cost);$('rDay').textContent=vnd(cost/30);
-  $('rWarn').style.display=h>50?'block':'none';
+  $('rWarn').style.display=h>500?'block':'none';
 }
 ['ppl','hard','use'].forEach(id=>$(id).addEventListener('input',calc));calc();
 
