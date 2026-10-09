@@ -458,6 +458,40 @@ footer{background:#06162b;color:rgba(255,255,255,.65);padding:56px 0 100px;font-
   .spec-table td{padding:13px 14px;font-size:14.5px}
   .culprit{padding:22px}
 }
+/* Quick form, consent note, CTA phụ */
+.quick{padding:0;margin-top:-64px;position:relative;z-index:3}
+.quick+.worry{padding-top:64px}
+.mini-form.quick-card{border-radius:24px;background:#fff;border:1px solid var(--line);box-shadow:0 30px 60px -30px rgba(0,42,92,.45)}
+.quick-card .mf-text b{font-size:20px}
+.quick-card .mf-text span{color:var(--muted)}
+.consent-note{font-size:12.5px!important;color:var(--muted)!important;margin:10px 0 0!important;line-height:1.5}
+.mf-fields .consent-note{grid-column:1/-1;margin:0!important}
+.consent-note a{color:var(--blue);text-decoration:underline}
+.calc-cta{margin-top:24px;display:grid;gap:10px}
+.calc-cta span{font-weight:600}
+.faq-cta{margin-top:40px;text-align:center}
+.faq-cta p{color:var(--muted);margin-bottom:16px}
+.faq-cta div{display:flex;gap:12px;justify-content:center;flex-wrap:wrap}
+
+/* Popup form */
+.modal{border:0;padding:0;background:transparent;width:min(440px,100% - 32px);max-height:calc(100% - 32px);margin:auto;overflow:visible}
+.modal::backdrop{background:rgba(6,22,43,.6);backdrop-filter:blur(3px)}
+.modal form{padding:34px 30px 28px}
+.modal h3{margin-top:12px}
+.modal-x{position:absolute;top:-14px;right:-10px;z-index:2;width:38px;height:38px;border-radius:50%;border:0;background:#fff;color:var(--navy-2);font-size:24px;line-height:1;cursor:pointer;box-shadow:0 6px 18px rgba(0,0,0,.3)}
+
+@media (max-width:980px){.quick{margin-top:-40px}}
+@media (max-width:620px){
+  .hero{padding-bottom:110px}
+  .hero-cta{margin:24px 0}.hero-cta .btn{width:100%}
+  .harm{grid-template-columns:1fr 1fr;gap:10px;margin-top:18px}
+  .harm li{font-size:13px;flex-direction:column;gap:6px}
+  .harm svg{width:26px;height:26px;padding:5px}
+  .badges{display:none}
+  .offer-chip img{height:42px}
+  .quick-card .mf-text b{font-size:18px}
+  .modal form{padding:28px 22px 22px}
+}
 @media (prefers-reduced-motion:reduce){*{animation:none!important;transition:none!important}.reveal{opacity:1;transform:none}}
 </style>
 </head>
@@ -495,12 +529,12 @@ footer{background:#06162b;color:rgba(255,255,255,.65);padding:56px 0 100px;font-
       <a href="#lo-ngai">Nỗi lo</a><a href="#cong-nghe">Công nghệ</a><a href="#tinh-nang">Tính năng</a><a href="#lap-dat">Lắp đặt</a><a href="#chi-phi">Chi phí</a><a href="#uu-dai">Ưu đãi</a><a href="#faq">Hỏi đáp</a>
       <div class="nav-m-extra">
         <a href="tel:1900599894" class="nav-m-call"><svg><use href="#i-phone"/></svg>Hotline 1900 599 894</a>
-        <a href="#dang-ky" class="btn btn-primary">Tư vấn miễn phí</a>
+        <a href="#dang-ky" class="btn btn-primary">Test nước miễn phí</a>
       </div>
     </nav>
     <div class="nav-right">
       <a href="tel:1900599894" class="hotline"><svg><use href="#i-phone"/></svg>1900 599 894</a>
-      <a href="#dang-ky" class="btn btn-primary">Tư vấn miễn phí</a>
+      <a href="#dang-ky" class="btn btn-primary">Test nước miễn phí</a>
       <button class="menu-btn" id="menuBtn" type="button" aria-label="Mở menu" aria-expanded="false" aria-controls="navLinks"><span></span><span></span><span></span></button>
     </div>
   </div>
@@ -511,9 +545,9 @@ footer{background:#06162b;color:rgba(255,255,255,.65);padding:56px 0 100px;font-
   <div class="bubbles" aria-hidden="true"></div>
   <div class="wrap hero-grid">
     <div>
-      <span class="eyebrow">Cảnh báo nước cứng · Atlas Filtri – Italia</span>
+      <span class="eyebrow">Atlas Filtri – Italia · Nhập khẩu nguyên chiếc</span>
       <h1>Cặn vôi đang âm thầm <em class="warn-em">phá hỏng</em> ngôi nhà bạn.</h1>
-      <p class="lead"><b>Aquarius 2 PRO</b> chặn canxi &amp; magie ngay từ đầu nguồn – trước khi chúng kịp bám vào đường ống, bình nóng lạnh, máy giặt, vòi sen và làn da của cả gia đình.</p>
+      <p class="lead"><b>Aquarius 2 PRO</b> chặn canxi &amp; magie ngay từ đầu nguồn – bảo vệ đường ống, bình nóng lạnh, máy giặt và làn da cả gia đình.</p>
       <ul class="harm">
         <li><svg><use href="#i-heater"/></svg><span><b>Bình nóng lạnh</b> đóng cặn – tốn điện, hỏng sớm</span></li>
         <li><svg><use href="#i-drop"/></svg><span><b>Đường ống</b> hẹp dần – nước yếu, rò rỉ</span></li>
@@ -521,14 +555,14 @@ footer{background:#06162b;color:rgba(255,255,255,.65);padding:56px 0 100px;font-
         <li><svg><use href="#i-hair"/></svg><span><b>Da khô, tóc xơ</b>, quần áo thô cứng</span></li>
       </ul>
       <div class="hero-cta">
-        <a href="#dang-ky" class="btn btn-primary">Đăng ký test nước miễn phí →</a>
+        <a href="#dang-ky" class="btn btn-primary">Đặt lịch test nước miễn phí →</a>
         <a href="#uu-dai" class="btn btn-ghost">Xem ưu đãi tặng kèm</a>
       </div>
       <a href="#uu-dai" class="offer-chip"><img src="assets/hydra.webp" alt="" width="234" height="430"><span><b>Ưu đãi:</b> Tặng bộ lọc chặn đầu vào <b>Hydra</b> (Atlas Filtri)<br>+ <b>Bảo hành 5 năm</b></span></a>
       <div class="badges">
         <div class="badge"><svg><use href="#i-flag"/></svg>Thương hiệu Atlas Filtri – Italia</div>
         <div class="badge"><svg><use href="#i-box"/></svg>Nhập khẩu nguyên chiếc</div>
-        <div class="badge"><svg><use href="#i-shield"/></svg>Bảo hành 5 năm</div>
+        <div class="badge"><svg><use href="#i-flask"/></svg>Test nước miễn phí tại nhà</div>
       </div>
     </div>
     <div class="hero-visual">
@@ -566,6 +600,23 @@ footer{background:#06162b;color:rgba(255,255,255,.65);padding:56px 0 100px;font-
   </div>
 </section>
 
+<!-- QUICK FORM -->
+<section class="quick">
+  <div class="wrap">
+    <form class="mini-form quick-card lead-form" novalidate data-product="Aquarius 2 PRO – Form nhanh đầu trang">
+      <div class="mf-text"><b>Nước nhà bạn cứng bao nhiêu?</b><span>Makxim test nước miễn phí tại nhà, báo kết quả ngay – không ràng buộc mua.</span></div>
+      <div class="mf-fields">
+        <input class="in" name="name" placeholder="Họ và tên *" required autocomplete="name">
+        <input class="in" name="phone" type="tel" placeholder="Số điện thoại *" required autocomplete="tel">
+        <button class="btn btn-primary" type="submit">Đặt lịch test →</button>
+        <input type="text" name="website" tabindex="-1" autocomplete="off" aria-hidden="true" style="position:absolute;left:-9999px;width:1px;height:1px;opacity:0">
+        <p class="consent-note">Chuyên viên gọi lại trong giờ hành chính. Bằng việc gửi, bạn đồng ý với <a href="chinh-sach-bao-mat.html" target="_blank">Chính sách bảo mật</a>.</p>
+        <div class="form-err">Chưa gửi được. Vui lòng gọi <a href="tel:1900599894">1900 599 894</a>.</div>
+      </div>
+      <div class="ok-msg"><svg><use href="#i-check"/></svg><b>Cảm ơn bạn!</b> Makxim sẽ gọi lại để hẹn lịch test nước.</div>
+    </form>
+  </div>
+</section>
 
 <!-- WORRIES -->
 <section class="worry" id="lo-ngai">
@@ -618,15 +669,37 @@ footer{background:#06162b;color:rgba(255,255,255,.65);padding:56px 0 100px;font-
         <div class="mf-fields">
           <input class="in" name="name" placeholder="Họ và tên *" required autocomplete="name">
           <input class="in" name="phone" type="tel" placeholder="Số điện thoại *" required autocomplete="tel">
-          <button class="btn btn-primary" type="submit">Nhận tư vấn →</button>
+          <button class="btn btn-primary" type="submit">Đặt lịch test →</button>
           <input type="text" name="website" tabindex="-1" autocomplete="off" aria-hidden="true" style="position:absolute;left:-9999px;width:1px;height:1px;opacity:0">
-          <label class="consent"><input type="checkbox" name="consent" required> <span>Tôi đồng ý để Makxim liên hệ theo <a href="chinh-sach-bao-mat.html" target="_blank">Chính sách bảo mật</a>.</span></label>
+          <p class="consent-note">Bằng việc gửi, bạn đồng ý với <a href="chinh-sach-bao-mat.html" target="_blank">Chính sách bảo mật</a> của Makxim.</p>
           <div class="form-err">Chưa gửi được. Vui lòng gọi <a href="tel:1900599894">1900 599 894</a>.</div>
         </div>
         <div class="ok-msg"><svg><use href="#i-check"/></svg><b>Cảm ơn bạn!</b> Makxim sẽ liên hệ sớm.</div>
       </form>
     </div>
     <p class="foot-note reveal">* Ước tính gồm muối (~10.000đ/kg), nước hoàn nguyên và điện năng; chi phí thực tế phụ thuộc độ cứng nước và lượng sử dụng.</p>
+  </div>
+</section>
+
+<!-- INSTALL -->
+<section class="install" id="lap-dat">
+  <div class="wrap install-grid">
+    <figure class="install-photo reveal">
+      <img src="assets/lap-dat-thuc-te.webp" alt="Aquarius 2 PRO lắp đặt thực tế trong tủ inox tại đầu nguồn nước" width="900" height="1200" loading="lazy">
+      <figcaption><svg><use href="#i-check"/></svg>Ảnh lắp đặt thực tế bởi Makxim</figcaption>
+    </figure>
+    <div class="reveal">
+      <span class="eyebrow">Lắp đặt thực tế</span>
+      <h2>Lắp gọn tại đầu nguồn – bảo vệ toàn bộ đường nước</h2>
+      <p class="lead">Kỹ thuật viên Makxim khảo sát và bố trí máy ngay tại khu kỹ thuật, trước khi nước đi vào bình nóng lạnh và các thiết bị trong nhà.</p>
+      <ul class="incl install-list">
+        <li><svg><use href="#i-check"/></svg><div><b>Đặt tại đầu nguồn nước lạnh</b><span>Toàn bộ nước sinh hoạt đều được làm mềm trước khi vào nhà.</span></div></li>
+        <li><svg><use href="#i-check"/></svg><div><b>Tủ inox bảo vệ khi lắp ngoài trời</b><span>Che nắng mưa, giữ máy luôn bền và sạch sẽ trên sân thượng.</span></div></li>
+        <li><svg><use href="#i-check"/></svg><div><b>Kết hợp cốc lọc thô phía trước</b><span>Giữ lại cặn bẩn, bảo vệ hạt nhựa và van điều khiển.</span></div></li>
+        <li><svg><use href="#i-check"/></svg><div><b>Đi ống gọn gàng, có van khóa</b><span>Dễ dàng bảo trì, nạp muối và kiểm tra định kỳ.</span></div></li>
+      </ul>
+      <a href="#dang-ky" class="btn btn-primary">Đặt lịch test nước miễn phí →</a>
+    </div>
   </div>
 </section>
 
@@ -708,7 +781,7 @@ footer{background:#06162b;color:rgba(255,255,255,.65);padding:56px 0 100px;font-
       <div class="steps">
         <div class="step"><div><h3>Giữ lại ion gây cặn</h3><p>Nước chảy qua 25 lít hạt nhựa – Ca²⁺ và Mg²⁺ bị giữ lại, thay bằng Na⁺ không gây cặn.</p></div></div>
         <div class="step"><div><h3>Làm mềm theo tỷ lệ sử dụng</h3><p>Turbine đo lưu lượng tích hợp – máy chỉ hoàn nguyên khi thực sự cần, không lãng phí.</p></div></div>
-        <div class="step"><div><h3>Tự hoàn nguyên ngược dòng</h3><p>Dung dịch muối bão hòa rửa sạch hạt nhựa theo chiều ngược dòng – chỉ 120 g muối/lít hạt nhựa, thuộc nhóm thấp nhất thị trường.</p></div></div>
+        <div class="step"><div><h3>Tự hoàn nguyên ngược dòng</h3><p>Dung dịch muối bão hòa rửa sạch hạt nhựa theo chiều ngược dòng, hoàn toàn tự động – bạn chỉ cần thêm muối vài tháng một lần.</p></div></div>
       </div>
     </div>
     <div class="diagram reveal" aria-label="Sơ đồ nguyên lý trao đổi ion">
@@ -751,24 +824,6 @@ footer{background:#06162b;color:rgba(255,255,255,.65);padding:56px 0 100px;font-
   </div>
 </section>
 
-<!-- LIFE -->
-<section class="life" id="loi-ich">
-  <div class="wrap">
-    <div class="center reveal">
-      <span class="eyebrow">Sống cùng nước mềm</span>
-      <h2>Ngôi nhà thay đổi thế nào khi không còn cặn vôi?</h2>
-      <p class="lead">Không chỉ là bảo vệ thiết bị – nước mềm nâng chất lượng sống của cả gia đình mỗi ngày.</p>
-    </div>
-    <div class="pain-grid">
-      <div class="pain reveal"><div class="ic"><svg><use href="#i-shower"/></svg></div><h3>Phòng tắm luôn sáng bóng</h3><p>Vách kính, sen vòi, thiết bị sứ không còn ố trắng – vệ sinh nhanh, giữ vẻ đẹp như mới.</p></div>
-      <div class="pain reveal"><div class="ic"><svg><use href="#i-hair"/></svg></div><h3>Da mịn, tóc mềm</h3><p>Tắm xong không còn cảm giác căng rít, tóc suôn mượt hơn – dịu nhẹ cho cả trẻ nhỏ.</p></div>
-      <div class="pain reveal"><div class="ic"><svg><use href="#i-heater"/></svg></div><h3>Thiết bị bền, tiết kiệm điện</h3><p>Bình nóng lạnh, máy giặt, máy rửa bát không đóng cặn – vận hành hiệu quả, ít hỏng vặt.</p></div>
-      <div class="pain reveal"><div class="ic"><svg><use href="#i-leaf"/></svg></div><h3>Ít xà phòng, ít hóa chất</h3><p>Xà phòng tạo bọt dễ hơn, không cần chất tẩy cặn – tiết kiệm và thân thiện môi trường.</p></div>
-    </div>
-  </div>
-</section>
-
-
 <!-- FEATURES -->
 <section class="features" id="tinh-nang">
   <div class="wrap">
@@ -784,51 +839,6 @@ footer{background:#06162b;color:rgba(255,255,255,.65);padding:56px 0 100px;font-
       <div class="feat reveal"><div class="ic"><svg><use href="#i-battery"/></svg></div><h3>Pin dự phòng khi mất điện</h3><p>Khe pin 9V giữ toàn bộ cài đặt và cho phép hoàn tất chu kỳ hoàn nguyên khi cúp điện.</p></div>
       <div class="feat reveal"><div class="ic"><svg><use href="#i-plane"/></svg></div><h3>Chế độ Holiday</h3><p>Khi vắng nhà dài ngày, máy tự súc rửa định kỳ 7 ngày/lần, bảo vệ hạt nhựa khỏi vi khuẩn.</p></div>
       <div class="feat reveal"><div class="ic"><svg><use href="#i-box"/></svg></div><h3>Bảo vệ kép, nạp muối dễ</h3><p>Nắp trượt nạp muối tiện lợi; khớp tràn + phao an toàn chống tràn nước tuyệt đối.</p></div>
-    </div>
-  </div>
-</section>
-
-<!-- GALLERY -->
-<section>
-  <div class="wrap">
-    <div class="center reveal">
-      <span class="eyebrow">Thiết kế</span>
-      <h2>Đẹp như một món nội thất</h2>
-      <p class="lead">Thân tủ liền khối bo cong mềm mại, điểm nhấn xanh đặc trưng – hài hòa trong phòng giặt, gara hay khu kỹ thuật.</p>
-    </div>
-    <div class="gallery">
-      <figure class="gal reveal"><img src="assets/aquarius-open.webp" alt="Aquarius với nắp nạp muối dạng trượt" loading="lazy"><figcaption>Nắp trượt – nạp muối dễ dàng</figcaption></figure>
-      <div class="gal-stack">
-        <figure class="gal reveal"><img src="assets/aquarius-pro.webp" alt="Aquarius 2 PRO" loading="lazy" style="max-height:340px"><figcaption>Aquarius 2 PRO</figcaption></figure>
-        <div class="mini-specs reveal">
-          <div><b>25 L</b><span>Hạt nhựa</span></div>
-          <div><b>64 kg</b><span>Sức chứa muối</span></div>
-          <div><b>1,5 kg</b><span>CaCO₃ xử lý mỗi chu kỳ</span></div>
-          <div><b>3/4"</b><span>Kết nối vào/ra</span></div>
-        </div>
-      </div>
-    </div>
-  </div>
-</section>
-
-<!-- INSTALL -->
-<section class="install" id="lap-dat">
-  <div class="wrap install-grid">
-    <figure class="install-photo reveal">
-      <img src="assets/lap-dat-thuc-te.webp" alt="Aquarius 2 PRO lắp đặt thực tế trong tủ inox tại đầu nguồn nước" width="900" height="1200" loading="lazy">
-      <figcaption><svg><use href="#i-check"/></svg>Ảnh lắp đặt thực tế bởi Makxim</figcaption>
-    </figure>
-    <div class="reveal">
-      <span class="eyebrow">Lắp đặt thực tế</span>
-      <h2>Lắp gọn tại đầu nguồn – bảo vệ toàn bộ đường nước</h2>
-      <p class="lead">Kỹ thuật viên Makxim khảo sát và bố trí máy ngay tại khu kỹ thuật, trước khi nước đi vào bình nóng lạnh và các thiết bị trong nhà.</p>
-      <ul class="incl install-list">
-        <li><svg><use href="#i-check"/></svg><div><b>Đặt tại đầu nguồn nước lạnh</b><span>Toàn bộ nước sinh hoạt đều được làm mềm trước khi vào nhà.</span></div></li>
-        <li><svg><use href="#i-check"/></svg><div><b>Tủ inox bảo vệ khi lắp ngoài trời</b><span>Che nắng mưa, giữ máy luôn bền và sạch sẽ trên sân thượng.</span></div></li>
-        <li><svg><use href="#i-check"/></svg><div><b>Kết hợp cốc lọc thô phía trước</b><span>Giữ lại cặn bẩn, bảo vệ hạt nhựa và van điều khiển.</span></div></li>
-        <li><svg><use href="#i-check"/></svg><div><b>Đi ống gọn gàng, có van khóa</b><span>Dễ dàng bảo trì, nạp muối và kiểm tra định kỳ.</span></div></li>
-      </ul>
-      <a href="#dang-ky" class="btn btn-primary">Đặt lịch khảo sát lắp đặt →</a>
     </div>
   </div>
 </section>
@@ -866,6 +876,7 @@ footer{background:#06162b;color:rgba(255,255,255,.65);padding:56px 0 100px;font-
         </div>
         <div class="res-cost"><span>Chi phí vận hành ước tính</span><b id="rCost">98.000đ</b><small>/ tháng · khoảng <b id="rDay">3.300đ</b>/ngày</small></div>
         <div class="res-warn" id="rWarn">Độ cứng vượt 500 ppm – cần khảo sát để thiết kế hệ thống tiền xử lý phù hợp.</div>
+        <div class="calc-cta"><span>Muốn biết con số chính xác cho nhà bạn?</span><a href="#dang-ky" class="btn btn-primary">Đặt lịch test nước miễn phí →</a></div>
         <p class="res-note">* Kết quả mang tính tham khảo, dựa trên công suất chu kỳ 1,5 kg CaCO₃ (≈ 5 m³ nước ở 300 ppm), 2,4 kg muối &amp; 132 L nước/lần hoàn nguyên; giả định muối 10.000đ/kg, nước 12.000đ/m³, điện ~6.000đ/tháng. Van tỷ lệ có thể giúp chi phí thực tế thấp hơn.</p>
       </div>
     </div>
@@ -931,7 +942,7 @@ footer{background:#06162b;color:rgba(255,255,255,.65);padding:56px 0 100px;font-
           <li><svg><use href="#i-check"/></svg>Lắp đặt &amp; hướng dẫn vận hành tận nơi</li>
           <li><svg><use href="#i-check"/></svg>Tư vấn giải pháp tổng thể (làm mềm + RO)</li>
         </ul>
-        <a href="#dang-ky" class="btn btn-primary" style="width:100%">Nhận ưu đãi &amp; đặt lịch test nước</a>
+        <a href="#dang-ky" class="btn btn-primary" style="width:100%">Đặt lịch test nước miễn phí →</a>
       </div>
     </div>
 
@@ -965,18 +976,13 @@ footer{background:#06162b;color:rgba(255,255,255,.65);padding:56px 0 100px;font-
     </div>
     <form id="leadForm" class="reveal lead-form" novalidate data-product="Aquarius 2 PRO">
       <div id="formBody">
-        <h3>Đăng ký nhận ưu đãi</h3>
-        <p>Miễn phí – không ràng buộc.</p>
+        <h3>Đặt lịch test nước miễn phí</h3>
+        <p>Chỉ 2 thông tin – chuyên viên Makxim gọi lại trong giờ hành chính để hẹn lịch. Không ràng buộc mua.</p>
         <input class="in" name="name" placeholder="Họ và tên *" required autocomplete="name">
         <input class="in" name="phone" type="tel" placeholder="Số điện thoại *" required autocomplete="tel" pattern="0[0-9]{9,10}">
-        <input class="in" name="area" placeholder="Tỉnh / Thành phố">
-        <select class="in" name="source">
-          <option value="">Nguồn nước đang sử dụng</option>
-          <option>Nước máy</option><option>Nước giếng khoan</option><option>Cả hai</option>
-        </select>
         <input type="text" name="website" tabindex="-1" autocomplete="off" aria-hidden="true" style="position:absolute;left:-9999px;width:1px;height:1px;opacity:0">
-        <label class="consent"><input type="checkbox" name="consent" required> <span>Tôi đồng ý để Makxim liên hệ tư vấn và xử lý thông tin theo <a href="chinh-sach-bao-mat.html" target="_blank">Chính sách bảo mật</a>.</span></label>
-        <button class="btn btn-primary" type="submit">Gửi đăng ký →</button>
+        <button class="btn btn-primary" type="submit">Đặt lịch test nước miễn phí →</button>
+        <p class="consent-note">Bằng việc gửi, bạn đồng ý để Makxim liên hệ tư vấn theo <a href="chinh-sach-bao-mat.html" target="_blank">Chính sách bảo mật</a>.</p>
         <div class="form-err">Chưa gửi được. Vui lòng thử lại hoặc gọi <a href="tel:1900599894">1900 599 894</a>.</div>
       </div>
       <div class="ok-msg">
@@ -1030,14 +1036,14 @@ footer{background:#06162b;color:rgba(255,255,255,.65);padding:56px 0 100px;font-
     <div class="faq-list">
       <details class="reveal"><summary>Chính sách bảo hành như thế nào?</summary><p>Aquarius 2 PRO được bảo hành 5 năm. Điều kiện và phạm vi bảo hành được ghi cụ thể trong hợp đồng/phiếu bảo hành khi lắp đặt. Kỹ thuật Makxim hỗ trợ kiểm tra, bảo trì trong suốt quá trình sử dụng.</p></details>
       <details class="reveal"><summary>Bộ lọc Hydra tặng kèm dùng để làm gì?</summary><p>Hydra là bộ lọc chặn đầu vào tự rửa của Atlas Filtri, lắp trước máy làm mềm để giữ lại cát, gỉ sét, cặn bẩn lớn. Nhờ đó van và hạt nhựa của Aquarius 2 PRO được bảo vệ, hệ thống bền hơn. Khi cốc lọc bám cặn, chỉ cần mở van xả để súc rửa ngược.</p></details>
-      <details class="reveal"><summary>Làm sao biết máy là hàng nhập khẩu nguyên chiếc?</summary><p>Máy nguyên chiếc có kết cấu tủ liền khối đồng bộ, van điều khiển được cài đặt đúng model, có tem nhãn và số serial của hãng trên thiết bị. Chuyên viên Makxim sẽ hướng dẫn bạn kiểm tra trực tiếp khi khảo sát và khi bàn giao.</p></details>
-      <details class="reveal"><summary>Máy làm mềm nước khác máy lọc RO như thế nào?</summary><p>Máy làm mềm xử lý độ cứng (canxi, magie) cho toàn bộ nước sinh hoạt trong nhà, chống cặn vôi cho đường ống và thiết bị. Máy RO lọc nước uống tại một vòi. Hai thiết bị bổ trợ cho nhau.</p></details>
       <details class="reveal"><summary>Nước sau làm mềm có uống trực tiếp được không?</summary><p>Aquarius 2 PRO được thiết kế để xử lý nước sinh hoạt. Để uống trực tiếp, nên dùng thêm máy lọc RO tại bếp – nước đã làm mềm còn giúp màng RO bền hơn.</p></details>
       <details class="reveal"><summary>Bao lâu phải thêm muối một lần?</summary><p>Bồn chứa tối đa 64 kg muối. Với gia đình 4 người và nước có độ cứng trung bình, một bao muối 25 kg thường dùng được vài tháng. Bạn có thể dùng công cụ ước tính ở trên để tham khảo.</p></details>
-      <details class="reveal"><summary>Máy có cần điện không? Mất điện thì sao?</summary><p>Van điện tử cần nguồn điện để điều khiển. Máy có khe lắp pin 9V dự phòng giúp giữ cài đặt và hoàn tất chu kỳ hoàn nguyên khi mất điện (pin không kèm theo máy).</p></details>
       <details class="reveal"><summary>Máy được lắp ở vị trí nào?</summary><p>Lắp tại đường nước lạnh đầu nguồn, sau bồn chứa/bơm và trước bình nóng lạnh. Nhiệt độ nước đầu vào tối đa 38°C, áp lực tối đa 8 bar.</p></details>
-      <details class="reveal"><summary>Đi vắng dài ngày có ảnh hưởng đến máy không?</summary><p>Không. Chế độ Holiday tự động súc rửa hạt nhựa định kỳ 7 ngày/lần để ngăn vi khuẩn phát triển khi không sử dụng.</p></details>
       <details class="reveal"><summary>Aquarius 2 PRO phù hợp với gia đình bao nhiêu người?</summary><p>Với lưu lượng khuyến nghị 1,6 m³/h (tối đa 2,4 m³/h), máy phù hợp nhà phố, biệt thự nhiều phòng tắm. Makxim sẽ khảo sát thực tế để tư vấn chính xác.</p></details>
+    </div>
+    <div class="faq-cta reveal">
+      <p>Còn thắc mắc khác? Chuyên viên Makxim tư vấn miễn phí.</p>
+      <div><a href="#dang-ky" class="btn btn-primary">Đặt lịch test nước miễn phí →</a><a href="tel:1900599894" class="btn btn-navy">Gọi 1900 599 894</a></div>
     </div>
   </div>
 </section>
@@ -1060,10 +1066,32 @@ footer{background:#06162b;color:rgba(255,255,255,.65);padding:56px 0 100px;font-
   </div>
 </footer>
 
+<dialog class="modal" id="leadModal" aria-labelledby="modalTitle">
+  <button class="modal-x" type="button" aria-label="Đóng">×</button>
+  <form class="lead-form" novalidate data-product="Aquarius 2 PRO – Popup">
+    <div>
+      <span class="gift-tag">🎁 Tặng bộ lọc Hydra + bảo hành 5 năm</span>
+      <h3 id="modalTitle">Đặt lịch test nước miễn phí</h3>
+      <p>Để lại tên &amp; số điện thoại – chuyên viên Makxim gọi lại trong giờ hành chính để hẹn lịch. Không ràng buộc mua.</p>
+      <input class="in" name="name" placeholder="Họ và tên *" required autocomplete="name">
+      <input class="in" name="phone" type="tel" placeholder="Số điện thoại *" required autocomplete="tel">
+      <input type="text" name="website" tabindex="-1" autocomplete="off" aria-hidden="true" style="position:absolute;left:-9999px;width:1px;height:1px;opacity:0">
+      <button class="btn btn-primary" type="submit">Đặt lịch test nước miễn phí →</button>
+      <p class="consent-note">Bằng việc gửi, bạn đồng ý với <a href="chinh-sach-bao-mat.html" target="_blank">Chính sách bảo mật</a> của Makxim.</p>
+      <div class="form-err">Chưa gửi được. Vui lòng thử lại hoặc gọi <a href="tel:1900599894">1900 599 894</a>.</div>
+    </div>
+    <div class="ok-msg">
+      <svg><use href="#i-check"/></svg>
+      <h3>Cảm ơn bạn!</h3>
+      <p>Makxim đã nhận thông tin và sẽ gọi lại để hẹn lịch test nước.</p>
+    </div>
+  </form>
+</dialog>
+
 <div class="m-cta">
   <a class="call" href="tel:1900599894">📞 Gọi ngay</a>
   <a class="zalo" href="https://zalo.me/2665840743788271573" target="_blank" rel="noopener">Zalo</a>
-  <a class="reg" href="#dang-ky">Đăng ký</a>
+  <a class="reg" href="#dang-ky">Test nước</a>
 </div>
 
 <script>
@@ -1118,9 +1146,6 @@ document.querySelectorAll('.lead-form').forEach(form=>form.addEventListener('sub
   f['name'].style.borderColor=name?'':'#e11d48';
   f['phone'].style.borderColor=phoneOk?'':'#e11d48';
   if(!name||!phoneOk){(name?f['phone']:f['name']).focus();return}
-  const consentOk=f['consent'].checked;
-  f['consent'].closest('.consent').classList.toggle('err',!consentOk);
-  if(!consentOk){f['consent'].focus();return}
   err.style.display='none';
   if(!SHEET_ENDPOINT){console.warn('Chưa cấu hình SHEET_ENDPOINT – dữ liệu chưa được gửi.')}
   else{
@@ -1150,6 +1175,18 @@ menuBtn.addEventListener('click',()=>setMenu(!hdr.classList.contains('menu-open'
 $('navLinks').addEventListener('click',e=>{if(e.target.closest('a'))setMenu(false)});
 document.addEventListener('keydown',e=>{if(e.key==='Escape')setMenu(false)});
 document.addEventListener('click',e=>{if(!hdr.contains(e.target))setMenu(false)});
+
+// Popup form: mọi nút dẫn tới #dang-ky mở form ngay tại chỗ (trình duyệt cũ vẫn cuộn xuống form cuối trang)
+const modal=$('leadModal');
+if(modal.showModal){
+  document.addEventListener('click',e=>{
+    const a=e.target.closest('a[href="#dang-ky"]');
+    if(!a)return;
+    e.preventDefault();setMenu(false);modal.showModal();
+  });
+  modal.querySelector('.modal-x').addEventListener('click',()=>modal.close());
+  modal.addEventListener('click',e=>{if(e.target===modal)modal.close()});
+}
 
 // Đo lường liên hệ: bấm gọi hotline / mở Zalo
 document.addEventListener('click',e=>{
